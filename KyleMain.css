@@ -1,49 +1,88 @@
 body{
-  background-color:#202020;
+  background-color: #202020;
 }
 
 h1{
-  color:#FFFFFF;
-  font-family:Aharoni;
-  text-align:center;
+  color: #FFFFFF;
+  font-family: Aharoni;
+  text-align: center;
 }
 
 hr{
-  border-style:solid;
-  border-color:#A81818;
+  border-style: solid;
+  border-color: #A81818;
 }
 
 p{
   color:#438EDE;
-  font-family:Aharoni;
-  text-align:center;
+  font-family: Aharoni;
+  text-align: center;
 }
 
 .HEX_UL{
-  float:left;
-  clear:left;
+  width:315px;
+  height:200px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  float: left;
+  clear: left;
 }
 
 .HEX_UR{
-  float:right;
-  clear:right;
+  width:315px;
+  height:200px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  float: right;
+  clear: right;
 }
 
 .HEX_L{
+  width: 21px;
+  height: 310px;
   padding: 0px;
-  border:0px;
-  margin:0px;
-  float:left;
-  clear:left;
+  border: 0px;
+  margin: 0px;
+  float: left;
+  clear: left;
 }
 
 .HEX_R{
+  width: 21px;
+  height: 310px;
   padding: 0px;
-  border:0px;
-  margin:0px;
-  float:right;
-  clear:right;
+  border: 0px;
+  margin: 0px;
+  float: right;
+  clear: right;
 }
+
+.HEX_DL{
+  width:315px;
+  height:200px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  float: left;
+  clear: left;
+}
+
+.HEX_DR{
+  width:315px;
+  height:200px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  float: right;
+  clear: right;
+}
+
+.Middle_Clear{
+  clear:both;
+}
+
 .Bottom_Clear{
   clear:both;
 }
