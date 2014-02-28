@@ -13,7 +13,8 @@ h1{
 }
 
 #name{
-  /*text-decoration:none;*/
+  position:relative;
+  text-decoration:none;
   text-align:right;
 }
 
@@ -26,6 +27,15 @@ p{
   color:#438EDE;
   font-family: Aharoni;
   text-align: center;
+}
+
+.outer_HEX_div{
+  width: 630px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  position: relative;
+  /*background-color:purple;*/
 }
 
 .HEX_UL{
@@ -49,8 +59,8 @@ p{
 }
 
 .HEX_L{
-  width: 21px;
-  height: 310px;
+  width: 14px;
+  height: 360px;
   padding: 0px;
   border: 0px;
   margin: 0px;
@@ -59,8 +69,8 @@ p{
 }
 
 .HEX_R{
-  width: 21px;
-  height: 310px;
+  width: 14px;
+  height: 360px;
   padding: 0px;
   border: 0px;
   margin: 0px;
@@ -99,7 +109,7 @@ p{
 /*Color Hex Values:
 
 #FFFFFF White
-#A81818 burgundy 
+#A81818 burgundy
 #438EDE sky blue
 #313131 dark grey
 
