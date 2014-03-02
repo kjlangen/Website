@@ -1,22 +1,15 @@
 body{
-  background-color: #202020;
+  background: radial-gradient(circle, #202020, #313131);
+  background: -o-radial-gradient(circle, #202020, #313131);
+  background: -moz-radial-gradient(circle, #202020, #313131);
+  background: -webkit-radial-gradient(circle, #202020, #313131);
 }
 
 h1{
   color: #FFFFFF;
   font-family: Aharoni;
-  text-align: center;
 }
 
-#welcome{
-  text-align:left;
-}
-
-#name{
-  position:relative;
-  text-decoration:none;
-  text-align:right;
-}
 
 hr{
   border-style: solid;
@@ -24,83 +17,143 @@ hr{
 }
 
 p{
-  color:#438EDE;
+  color: #438EDE;
   font-family: Aharoni;
   text-align: center;
 }
 
+
+/**************************/
+/*Exterior text*/
+#welcome{
+  text-align:center;
+}
+
+#name{
+  position:relative;
+  text-decoration:none;
+  text-align:center;
+}
+/**************************/
+
+
+
+/**************************/
+/*Text inside the hexagon*/
+.inner_text{
+  font-size: 25pt;
+  position: absolute;
+  color: #A81818;
+}
+
+#projects{
+  left: 216px;
+  top: 135px;
+}
+
+#work_experience{
+  left: 50px;
+  top: 340px;
+}
+
+#education{
+  right: 65px;
+  top: 340px;
+}
+/**************************/
+
+
 .outer_HEX_div{
-  width: 630px;
+  width: 550px;
   height: 100%;
   margin: 0 auto;
   z-index: -1;
   position: relative;
-  /*background-color:purple;*/
 }
 
-.HEX_UL{
-  width:315px;
-  height:200px;
+/**************************/
+/*Hexagon Divs*/
+.HEX_SIDE{
+  /*Ratio:33.022*/
+  width: 10px;
+  height: 320px;
   padding: 0px;
   border: 0px;
   margin: 0px;
+}
+
+.HEX_TOPBOTTOM{
+  /*Ratio:1.732*/
+  width: 275px;
+  height: 159px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+#hex_upper_left{
   float: left;
   clear: left;
 }
 
-.HEX_UR{
-  width:315px;
-  height:200px;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+#hex_upper_right{
   float: right;
   clear: right;
 }
 
-.HEX_L{
-  width: 14px;
-  height: 360px;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+#hex_left{
   float: left;
   clear: left;
 }
 
-.HEX_R{
-  width: 14px;
-  height: 360px;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+#hex_right{
   float: right;
   clear: right;
 }
 
-.HEX_DL{
-  width:315px;
-  height:200px;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+#hex_lower_left{
   float: left;
   clear: left;
 }
 
-.HEX_DR{
-  width:315px;
-  height:200px;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
+#hex_lower_right{
   float: right;
   clear: right;
 }
+/**************************/
 
-.Middle_Clear{
-  clear:both;
+
+
+/**************************/
+/*Inner red lines*/
+
+.INNER_LEFTRIGHT{
+  width: 275px;
+  height: 159px;
+  position: absolute;
+  z-index:-2;
 }
+
+.INNER_VERTICAL{
+  width: 2px;
+  height: 322px;
+  position: absolute;
+  z-index:-2;
+  top: 316px;
+  left: 274px;
+}
+
+#inner_left{
+  top: 159px;
+}
+
+#inner_right{
+  right: 0px;
+  top: 159px;
+}
+
+
+/**************************/
 
 .Bottom_Clear{
   clear:both;
@@ -109,9 +162,10 @@ p{
 /*Color Hex Values:
 
 #FFFFFF White
-#A81818 burgundy
+#A81818 red
 #438EDE sky blue
 #313131 dark grey
+#202020 background grey
 
 Font Family:
 Aharoni
