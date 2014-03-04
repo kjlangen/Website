@@ -1,8 +1,5 @@
 body{
-  background: radial-gradient(circle, #202020, #313131);
-  background: -o-radial-gradient(circle, #202020, #313131);
-  background: -moz-radial-gradient(circle, #202020, #313131);
-  background: -webkit-radial-gradient(circle, #202020, #313131);
+  background-color: #313131;
 }
 
 h1{
@@ -16,22 +13,43 @@ hr{
   border-color: #A81818;
 }
 
-p{
+h2{
   color: #438EDE;
   font-family: Aharoni;
   text-align: center;
 }
 
 
+
+/**************************/
+/*Inner Text link attributes*/
+
+a.inner_text:link{
+  color: #A81818;
+  text-decoration: none;
+}
+
+a.inner_text:visited{
+  color: #A81818;
+  text-decoration: none;
+}
+
+a.inner_text:hover{
+  color: #A81818;
+  text-shadow: 0px 0px 30px #E82C39;
+}
+/**************************/
+
+
 /**************************/
 /*Exterior text*/
+
 #welcome{
   text-align:center;
 }
 
 #name{
   position:relative;
-  text-decoration:none;
   text-align:center;
 }
 /**************************/
@@ -39,7 +57,8 @@ p{
 
 
 /**************************/
-/*Text inside the hexagon*/
+/*Interior text*/
+
 .inner_text{
   font-size: 25pt;
   position: absolute;
@@ -57,22 +76,25 @@ p{
 }
 
 #education{
-  right: 65px;
+  right: 210px;
   top: 340px;
 }
 /**************************/
 
 
+
+/**************************/
+/*Outer Hexagon Div*/
+
 .outer_HEX_div{
   width: 550px;
   height: 100%;
   margin: 0 auto;
-  z-index: -1;
   position: relative;
 }
 
-/**************************/
 /*Hexagon Divs*/
+
 .HEX_SIDE{
   /*Ratio:33.022*/
   width: 10px;
@@ -80,6 +102,7 @@ p{
   padding: 0px;
   border: 0px;
   margin: 0px;
+  z-index: -2;
 }
 
 .HEX_TOPBOTTOM{
@@ -89,36 +112,43 @@ p{
   padding: 0px;
   border: 0px;
   margin: 0px;
+  z-index: -2;
 }
 
 #hex_upper_left{
   float: left;
   clear: left;
+  z-index: -2;
 }
 
 #hex_upper_right{
   float: right;
   clear: right;
+  z-index: -2;
 }
 
 #hex_left{
   float: left;
   clear: left;
+  z-index: -2;
 }
 
 #hex_right{
   float: right;
   clear: right;
+  z-index: -2;
 }
 
 #hex_lower_left{
   float: left;
   clear: left;
+  z-index: -2;
 }
 
 #hex_lower_right{
   float: right;
   clear: right;
+  z-index: -2;
 }
 /**************************/
 
@@ -151,9 +181,9 @@ p{
   right: 0px;
   top: 159px;
 }
-
-
 /**************************/
+
+
 
 .Bottom_Clear{
   clear:both;
