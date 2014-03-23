@@ -1,7 +1,5 @@
 body{
   background-color: #313131;
-  /*background-image:url('');*/
-  /*background-size:cover;*/
 }
 
 h1{
@@ -21,56 +19,46 @@ h2{
   text-align: center;
 }
 
-/**************************/
-#content_div{
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
-/**************************/
-
 
 /**************************/
 /*Small Hexagons*/
+
 .small_hexagon{
   border: 0px;
   margin: 0px;
   padding: 0px;
-  width: 100px;
-  height: 90px;
+  width: 60px;
+  height: 55px;
   position: relative;
 }
 
-#facebook{
-  right: 150px;
+/*Linkedin Hexagon*/
+#linkedin{
+  left: 580px;
   bottom: 638px;
   z-index: 2;
 }
 
-#linkedin{
-  left: 600px;
-  bottom: 728px;
-<<<<<<< HEAD
-  z-index: 2;
-=======
-  z-index: 2;/
->>>>>>> MainPageWork
-}
-
-#resume{
-  right: 150px;
-  bottom: 270px;
-  z-index: 2;
-}
-
+/*GitHub Hexagon*/
 #github{
-  left: 600px;
-  bottom: 360px;
+  right: 90px;
+  bottom: 693px;
   z-index: 2;
 }
 
+/*Facebok Hexagon*/
+#facebook{
+  right: 90px;
+  bottom: 165px;
+  z-index: 2;
+}
+
+/*Resume Hexagon*/
+#resume{
+  left: 580px;
+  bottom: 220px;
+  z-index: 2;
+}
 /**************************/
 
 
@@ -235,7 +223,6 @@ a.inner_text:hover{
   top: 159px;
 }
 /**************************/
-
 
 
 .Bottom_Clear{
