@@ -46,30 +46,25 @@ h2{
 #facebook{
   right: 150px;
   bottom: 638px;
-  z-index: -3;
-}
-
-#fblogo{
-  position: relative;
-  bottom: 83px;
-  left: 5px;
+  z-index: 2;
 }
 
 #linkedin{
   left: 600px;
   bottom: 728px;
-  z-index: -3;
+  z-index: 2;
 }
 
 #resume{
   right: 150px;
   bottom: 270px;
-  z-index: -3;
+  z-index: 2;
 }
 
 #github{
   left: 600px;
   bottom: 360px;
+  z-index: 2;
 }
 
 /**************************/
