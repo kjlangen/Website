@@ -52,7 +52,11 @@ h2{
 #linkedin{
   left: 600px;
   bottom: 728px;
+<<<<<<< HEAD
   z-index: 2;
+=======
+  z-index: 2;/
+>>>>>>> MainPageWork
 }
 
 #resume{
