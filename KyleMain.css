@@ -1,5 +1,6 @@
 body{
-  background-color: #313131;
+  background-image:url('Background-maybe.jpg');
+  //background-image: #313131;
 }
 
 h1{
@@ -17,6 +18,15 @@ h2{
   color: #438EDE;
   font-family: Aharoni;
   text-align: center;
+}
+
+footer{
+  color: #FFFFFF;
+  text-align: center;
+  float: bottom;
+  width 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
