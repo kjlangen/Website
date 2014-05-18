@@ -1,0 +1,70 @@
+html{
+  font-family: cambria;
+}
+
+h1 {
+  text-align: center;
+  color: #A81818;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr{
+  border-color: #A81818;
+}
+
+li{
+  list-style-type: square;
+}
+
+#wrapper{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper2{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tight{
+  margin-top: 0px;
+}
+
+.unidata{
+  float: center;
+  text-align: center;
+  font-size: 80%;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#adress{
+  text-align: left;
+  float: left;
+  padding-left: 15px;
+}
+
+#contact_info{
+  text-align: right;
+  float: right;
+  padding-right: 15px;
+}
+
+.subheading{
+  font-weight: bold;
+  font-size: 115%;
+}
+
+.titles{
+  font-weight: bold;
+}
+
+.date{
+  text-align: right;
+  float: right;
+}
