@@ -1,7 +1,6 @@
 body{
   background-image:url('Background-maybe.jpg');
   font-family: "Helvetica Neue",Helvetica,sans-serif;
-  //background-image: #313131;
 }
 
 h1{
@@ -11,11 +10,6 @@ h1{
 hr{
   border-style: solid;
   border-color: #A81818;
-}
-
-h2{
-  color: #438EDE;
-  text-align: center;
 }
 
 footer{
@@ -29,26 +23,25 @@ footer{
   clear:both;
 }
 
-#introduction{
+.introduction{
   color: white;
   padding: 20px;
-  top: -350px;
   position: relative;
   font-size: 115%;
   text-align: center;
 }
 
-#one{
+.one{
   text-decoration: overline;
 }
 
-#body_wrapper{
-  width: 1250px;
+.body_wrapper{
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#hotbar{
+.hotbar{
   width: 650px;
   height: 39px;
   position: relative;
@@ -58,15 +51,24 @@ footer{
 
 .external{
   float: left;
-  margin-left: 137px;
+  margin-left: 100px;
   width: 35px;
   height: 30px;
   z-index: 2;
 }
 
+#number_fact{
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 115%;
+  top: 150px;
+}
 /**************************/
 /* Banner */
-#banner-wrapper{
+.banner-wrapper{
   position: relative;
   margin-left:auto;
   margin-right: auto;
@@ -75,7 +77,7 @@ footer{
   height: 39px;
 }
 
-#banner{
+.banner{
   width: 650px;
   height: 39px;
   margin: 0 auto;
@@ -85,56 +87,57 @@ footer{
 
 /**************************/
 /* Portrait */
-#portrait{
+.portrait{
   width: 149px;
   height: 100px;
   margin: 0 auto;
   position: relative;
-  top: -330px;
-}
-
-#portrait_inner{
-  width: 149px;
-  height: 100px;
+  top: 20px;
+  background-image: url('Me.png');
+  background-size: 100%;
 }
 /**************************/
 
 /**************************/
 /*Exterior text*/
 
-#name_first{
+.name_first{
   text-align: center;
   position: relative;
   margin: 0 auto;
   font-size: 30pt;
-  color: #2f4f7a;
-
+  color: 2f4f7a;
 }
 /**************************/
 
 /**************************/
 /*Centre Hexagaon Interior text*/
-
-.inner_text{
-  font-size: 25pt;
-  position: absolute;
-  color: #A81818;
+.inner_text_wrapper{
+  position: relative;
+  text-align: center;
+  width: 250px;
+  margin: 0px;
   z-index: 2;
 }
 
-#projects{
-  left: 216px;
-  top: 135px;
+.inner_text{
+  font-size: 25pt;
+  color: #A81818;
 }
 
-#work_experience{
-  left: 50px;
-  top: 340px;
+.work_experience{
+  top: 134px;
+  margin: 0 auto;
 }
 
-#education{
-  right: 210px;
-  top: 340px;
+.projects{
+  top: 288px;
+  float: left;
+}
+
+.blog{
+  top: 288px;
+  float: right;
 }
 /**************************/
 
@@ -157,78 +160,65 @@ a.inner_text:hover{
 }
 /**************************/
 
-
-
-
 /**************************/
 /*Hexagon Wrappers*/
 
-#center_hex_wrapper{
-  width: 550px;
-  height: 638px;
+.center_hex_wrapper{
+  width: 500px;
+  height: 580px;
   margin: 30px;
   position: relative;
   float: left;
+  background-image: url('TEST.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#left_hex_wrapper{
+.left_hex_wrapper{
   width: 320px;
   height: 371px;
   margin: 0px;
   float: left;
+  background-image: url('TEST.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#right_hex_wrapper{
+.right_hex_wrapper{
   width: 320px;
   height: 371px;
   margin: 0px;
   float: right;
-}
-
-#center_hex{
-  width: 550px;
-  height: 638px;
-  z-index: -2;
-}
-
-#left_hex{
-  width: 320px;
-  height: 371px;
-}
-
-#right_hex{
-  width: 320px;
-  height: 371px;
+  background-image: url('TEST.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /**************************/
-
-
 
 /**************************/
 /*Inner red lines*/
 
 .inner_leftright{
-  width: 275px;
-  height: 159px;
+  width: 250px;
+  height: 144px;
   position: absolute;
+  top: 144px;
 }
 
 .inner_vertical{
   width: 2px;
-  height: 322px;
+  height: 292px;
   position: absolute;
-  top: 316px;
-  left: 274px;
+  left: 249px;
+  bottom: 2px;
 }
 
-#inner_left{
+.inner_left{
   left: 0px;
-  top: 159px;
 }
 
-#inner_right{
+.inner_right{
   right: 0px;
-  top: 159px;
 }
 /**************************/
 
