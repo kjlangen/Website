@@ -1,6 +1,7 @@
 body{
   background-image:url('Background-maybe.jpg');
-  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  /*font-family: "Helvetica Neue",Helvetica,sans-serif;*/
+  font-family: "Nova Square";
 }
 
 h1{
