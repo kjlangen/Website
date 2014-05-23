@@ -1,6 +1,5 @@
 body{
   background-image:url('Background-maybe.jpg');
-  /*font-family: "Helvetica Neue",Helvetica,sans-serif;*/
   font-family: "Nova Square";
 }
 
@@ -14,10 +13,12 @@ hr{
 }
 
 footer{
+  position: relative;
   color: #FFFFFF;
   text-align: center;
   width 100px;
   margin: 0 auto;
+  bottom: 0;
 }
 
 .Bottom_Clear{
@@ -106,7 +107,7 @@ footer{
   text-align: center;
   position: relative;
   margin: 0 auto;
-  font-size: 30pt;
+  font-size: 40pt;
   color: 2f4f7a;
 }
 /**************************/
@@ -122,7 +123,7 @@ footer{
 }
 
 .inner_text{
-  font-size: 25pt;
+  font-size: 30pt;
   color: #A81818;
 }
 
