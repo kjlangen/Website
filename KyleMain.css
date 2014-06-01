@@ -12,10 +12,19 @@ hr{
   border-color: #A81818;
 }
 
+a{
+  text-decoration: none;
+}
+
+.credit_link{
+  color: #A81818;
+}
+
 footer{
   position: relative;
   color: #FFFFFF;
   text-align: center;
+  font-size: 9pt;
   width 100px;
   margin: 0 auto;
   bottom: 0;
@@ -66,8 +75,17 @@ footer{
   text-align: center;
   color: #FFFFFF;
   font-size: 115%;
-  top: 150px;
+  top: 125px;
 }
+
+.credit{
+  position: relative;
+  padding: 10px;
+  magin: 0 auto;
+  text-align: center;
+  top: 130px;
+}
+
 /**************************/
 /* Banner */
 .banner-wrapper{
@@ -230,4 +248,5 @@ a.inner_text:hover{
 #438EDE sky blue
 #313131 dark grey
 #202020 background grey
+#CCCCC1 Text grey
 */

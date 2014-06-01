@@ -1,0 +1,47 @@
+body{
+  background-image: url('../Background-maybe.jpg');
+  background-repeat: no-repeat;
+  font-family: "Nova Square";
+}
+
+.body_wrapper{
+  height: 800px;
+  width: 730px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.blog_title{
+  padding: 10px;
+  position: fixed;
+  margin: 0 auto;
+  font-size: 50pt;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.title{
+  margin-top: 25px;
+  font-size: 32pt;
+  color: #A81818;
+}
+
+.content{
+  color: #CCCCC1;
+  padding: 0px 10px;
+  width: 580px;
+  float: right;
+}
+
+.content_wrapper{
+  position: relative;
+  margin: 0 auto;
+}
+
+.date{
+  background-image: url('../TEST.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px 15px;
+  float: left;
+}
