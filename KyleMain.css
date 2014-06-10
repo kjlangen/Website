@@ -75,15 +75,13 @@ footer{
   text-align: center;
   color: #FFFFFF;
   font-size: 115%;
-  top: 125px;
 }
 
-.credit{
+#credit{
   position: relative;
   padding: 10px;
   magin: 0 auto;
   text-align: center;
-  top: 130px;
 }
 
 /**************************/
@@ -205,8 +203,8 @@ a.inner_text:hover{
 }
 
 .right_hex_wrapper{
-  width: 320px;
-  height: 371px;
+  width: 280px;
+  height: 325px;
   margin: 0px;
   float: right;
   background-image: url('TEST.png');
