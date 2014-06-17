@@ -5,25 +5,21 @@ $(document).ready(function () {
     var html_height = $("html").height();
     var window_height = $(window).height();
     var difference = (window_height - html_height);
+    var number_fact = $("#number_fact");
 
     function get_num_fact(){
       $.get("http://numbersapi.com/" + rand + "/math",
-            function (data){ $("#number_fact").text(data);
-                             window.console.log("Finished adding number_api text");
+            function (data){number_fact.text(data);
+                            var quote_height = number_fact.height();
+                            var hexagon_height = $(".right_hex_wrapper").height();
+                            var credit_height = $("#credit").height();
+                            var text_distance_down = (hexagon_height - quote_height - credit_height)/2;
+                            $("#number_fact").css("top", text_distance_down);
+                            $("#credit").css("top", text_distance_down);
       });
     }
 
-    $("footer").css("bottom", -1 * difference);
-
     get_num_fact();
 
-    var quote_height = $("#number_fact").height();
-    var hexagon_height = $(".right_hex_wrapper").height();
-
-    $("#number_fact").css("top", hexagon_height/3 - quote_height/2);
-    $("#credit").css("top", hexagon_height/3 - quote_height/2);
-
-    window.console.log(hexagon_height);
-    window.console.log(quote_height);
-    window.console.log(hexagon_height/3 - quote_height/2);
+    $("footer").css("bottom", -1 * difference);
 });
