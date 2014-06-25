@@ -46,8 +46,6 @@ footer{
 
 .body_wrapper{
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #number_fact{
@@ -90,6 +88,7 @@ div #credit:hover{
 
 .banner_item{
   width: 80px;
+  /*float: left;*/
 }
 
 .icon{
@@ -101,6 +100,7 @@ div #credit:hover{
 
 .icon_text{
   color: #FFFFFF;
+  text-align: center;
 }
 /**************************/
 
@@ -121,10 +121,7 @@ div #credit:hover{
 /*Exterior text*/
 
 .name_first{
-  text-align: center;
-  position: relative;
-  margin: 0 auto;
-  font-size: 40pt;
+  text-align: left;
   color: #FFFFFF;
 }
 /**************************/

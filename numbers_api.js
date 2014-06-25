@@ -6,6 +6,11 @@ $(document).ready(function () {
     var window_height = $(window).height();
     var difference = (window_height - html_height);
     var number_fact = $("#number_fact");
+    var banner = $(".banner-wrapper");
+    var facebook = $("#facebook");
+    var github = $("#github");
+    var resume = $("#resume");
+    var linkedin = $("#linkedin");
 
     function get_num_fact(){
       $.get("http://numbersapi.com/" + rand + "/math",
@@ -22,4 +27,16 @@ $(document).ready(function () {
     get_num_fact();
 
     $("footer").css("bottom", -1 * difference);
+
+    //Equally space the banner items
+
+    /*var margin_banner = (banner.width() - 4 * facebook.width())/8;
+    facebook.css("margin-left", margin_banner);
+    facebook.css("margin-right", margin_banner);
+    github.css("margin-left", margin_banner);
+    github.css("margin-right", margin_banner);
+    resume.css("margin-left", margin_banner);
+    resume.css("margin-right", margin_banner);
+    linkedin.css("margin-left", margin_banner);
+    linkedin.css("margin-right", margin_banner);*/
 });
