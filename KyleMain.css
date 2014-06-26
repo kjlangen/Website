@@ -27,7 +27,7 @@ footer{
   bottom: 0;
 }
 
-.Bottom_Clear{
+.clear_both{
   clear:both;
 }
 
@@ -46,6 +46,8 @@ footer{
 
 .body_wrapper{
   width: 1200px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #number_fact{
@@ -73,6 +75,10 @@ div #credit:hover{
   color: #A81818;
 }
 
+.hover{
+  visibility: visible;
+}
+
 /**************************/
 /* Banner */
 .banner-wrapper{
@@ -88,7 +94,7 @@ div #credit:hover{
 
 .banner_item{
   width: 80px;
-  /*float: left;*/
+  float: right;
 }
 
 .icon{
@@ -99,29 +105,21 @@ div #credit:hover{
 }
 
 .icon_text{
+  visibility: hidden;
   color: #FFFFFF;
   text-align: center;
 }
-/**************************/
 
-/**************************/
-/* Portrait */
-.portrait{
-  width: 149px;
-  height: 100px;
-  margin: 0 auto;
-  position: relative;
-  top: 20px;
-  background-image: url('Me.png');
-  background-size: 100%;
-}
 /**************************/
 
 /**************************/
 /*Exterior text*/
 
 .name_first{
-  text-align: left;
+  position: relative;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 40pt;
   color: #FFFFFF;
 }
 /**************************/

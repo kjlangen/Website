@@ -4,13 +4,10 @@ $(document).ready(function () {
 
     var html_height = $("html").height();
     var window_height = $(window).height();
-    var difference = (window_height - html_height);
+    var difference = window_height - html_height;
     var number_fact = $("#number_fact");
     var banner = $(".banner-wrapper");
-    var facebook = $("#facebook");
-    var github = $("#github");
-    var resume = $("#resume");
-    var linkedin = $("#linkedin");
+    var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
 
     function get_num_fact(){
       $.get("http://numbersapi.com/" + rand + "/math",
@@ -24,19 +21,30 @@ $(document).ready(function () {
       });
     }
 
+    //Get and display number fact from Numbers API
     get_num_fact();
 
+    //Place the footer at the bottom of the window
     $("footer").css("bottom", -1 * difference);
 
     //Equally space the banner items
+    var margin_banner = (banner.width() - 4 * icon[0].width())/8;
 
-    /*var margin_banner = (banner.width() - 4 * facebook.width())/8;
-    facebook.css("margin-left", margin_banner);
-    facebook.css("margin-right", margin_banner);
-    github.css("margin-left", margin_banner);
-    github.css("margin-right", margin_banner);
-    resume.css("margin-left", margin_banner);
-    resume.css("margin-right", margin_banner);
-    linkedin.css("margin-left", margin_banner);
-    linkedin.css("margin-right", margin_banner);*/
+    for(var i = 0; i < 4; i++){
+      icon[i].css("margin-left", margin_banner);
+      icon[i].css("margin-right", margin_banner);
+      icon[i].find(".icon").css("left", 22.5);
+      icon[i].find(".icon").css("top", 2);
+    }
+
+    var test = $("#facebook").find("img");
+
+    test.hover(
+      function(){
+        $(this).closest("div").find("p").css("visibility", "visible");
+      },
+      function(){
+        $(this).closest("div").find("p").css("visibility", "hidden");
+      }
+    );
 });
