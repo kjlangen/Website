@@ -1,4 +1,5 @@
 var rand = Math.floor((Math.random() * 100) + 1);
+
 $(document).ready(function () {
     "Use Strict";
 
@@ -8,6 +9,11 @@ $(document).ready(function () {
     var number_fact = $("#number_fact");
     var banner = $(".banner-wrapper");
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
+    var icon_img = [];
+
+    for(var i = 0; i < 4; i++){
+      icon_img[i] = icon[i].find("img");
+    }
 
     function get_num_fact(){
       $.get("http://numbersapi.com/" + rand + "/math",
@@ -37,14 +43,14 @@ $(document).ready(function () {
       icon[i].find(".icon").css("top", 2);
     }
 
-    var test = $("#facebook").find("img");
-
-    test.hover(
-      function(){
-        $(this).closest("div").find("p").css("visibility", "visible");
-      },
-      function(){
-        $(this).closest("div").find("p").css("visibility", "hidden");
-      }
-    );
+    for(var i = 0; i < 4; i++){
+      icon_img[i].hover(
+        function (){
+          $(this).closest("div").find("p").fadeIn("slow");
+        },
+        function (){
+          $(this).closest("div").find("p").fadeOut("slow");
+        }
+      );
+    }
 });

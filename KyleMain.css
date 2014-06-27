@@ -75,10 +75,6 @@ div #credit:hover{
   color: #A81818;
 }
 
-.hover{
-  visibility: visible;
-}
-
 /**************************/
 /* Banner */
 .banner-wrapper{
@@ -94,6 +90,7 @@ div #credit:hover{
 
 .banner_item{
   width: 80px;
+  height: 85px;
   float: right;
 }
 
@@ -105,7 +102,7 @@ div #credit:hover{
 }
 
 .icon_text{
-  visibility: hidden;
+  display: none;
   color: #FFFFFF;
   text-align: center;
 }
@@ -118,7 +115,8 @@ div #credit:hover{
 .name_first{
   position: relative;
   text-align: center;
-  margin: 15px auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
   font-size: 40pt;
   color: #FFFFFF;
 }
@@ -140,17 +138,17 @@ div #credit:hover{
 }
 
 .work_experience{
-  top: 134px;
+  top: 114px;
   margin: 0 auto;
 }
 
 .projects{
-  top: 288px;
+  top: 273px;
   float: left;
 }
 
 .blog{
-  top: 288px;
+  top: 273px;
   float: right;
 }
 /**************************/
