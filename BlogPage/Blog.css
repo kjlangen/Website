@@ -5,14 +5,13 @@ body{
 }
 
 .body_wrapper{
-  height: 800px;
   width: 730px;
   position: relative;
   margin: 0 auto;
 }
 
 .blog_title{
-  padding: 10px;
+  top: -20px;
   position: relative;
   margin: 0 auto;
   font-size: 50pt;
@@ -39,16 +38,28 @@ body{
 }
 
 .date{
-  background-image: url('../TEST.png');
+  /*background-image: url('../TEST.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain;*/
   margin: 0px 15px;
   width: 100px;
   height: 115px;
   float: left;
 }
 
-.banner-wrapper{
+.date_day{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.date_time{
+  color: #CCCCC1;
+  text-align: left;
+  font-size: 12pt;
+}
+
+.banner_wrapper{
   position: relative;
   margin: 0px auto 30px auto;
   top: -8px;

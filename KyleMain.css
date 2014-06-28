@@ -77,7 +77,7 @@ div #credit:hover{
 
 /**************************/
 /* Banner */
-.banner-wrapper{
+.banner_wrapper{
   position: relative;
   margin: 0px auto 30px auto;
   top: -8px;
@@ -117,7 +117,7 @@ div #credit:hover{
   text-align: center;
   margin-top: 0px;
   margin-bottom: 15px;
-  font-size: 40pt;
+  font-size: 50pt;
   color: #FFFFFF;
 }
 /**************************/
