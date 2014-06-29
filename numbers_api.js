@@ -7,7 +7,7 @@ $(document).ready(function () {
     var window_height = $(window).height();
     var difference = window_height - html_height;
     var number_fact = $("#number_fact");
-    var banner = $(".banner-wrapper");
+    var banner = $(".banner_wrapper");
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
     var icon_img = [];
 
@@ -31,7 +31,9 @@ $(document).ready(function () {
     get_num_fact();
 
     //Place the footer at the bottom of the window
-    $("footer").css("bottom", -1 * difference);
+    if(difference >= 0){
+      $("footer").css("bottom", -1 * difference);
+    }
 
     //Equally space the banner items
     var margin_banner = (banner.width() - 4 * icon[0].width())/8;
