@@ -31,7 +31,9 @@ $(document).ready(function () {
     get_num_fact();
 
     //Place the footer at the bottom of the window
-    $("footer").css("bottom", -1 * difference);
+    if(difference >= 0){
+      $("footer").css("bottom", -1 * difference);
+    }
 
     //Equally space the banner items
     var margin_banner = (banner.width() - 4 * icon[0].width())/8;
