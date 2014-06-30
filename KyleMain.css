@@ -81,9 +81,9 @@ div #credit:hover{
   position: relative;
   margin: 0px auto 30px auto;
   top: -8px;
-  width: 650px;
-  height: 39px;
-  background-image: url("Test Banner2.png");
+  width: 550px;
+  height: 40px;
+  background-image: url("Short Banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

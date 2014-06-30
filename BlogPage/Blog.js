@@ -22,23 +22,23 @@ $(document).ready(function () {
 
   //Equally space the banner items
   var banner = $(".banner_wrapper");
-  var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
+  var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin"), $("#home")];
   var icon_img = [];
 
-  for(var i = 0; i < 4; i++){
+  for(var i = 0; i < 5; i++){
     icon_img[i] = icon[i].find("img");
   }
 
-  var margin_banner = (banner.width() - 4 * icon[0].width())/8;
+  var banner_icon_margin = (banner.width() - 5 * icon[0].width())/8;
 
-  for(var i = 0; i < 4; i++){
-    icon[i].css("margin-left", margin_banner);
-    icon[i].css("margin-right", margin_banner);
+  for(var i = 0; i < 5; i++){
+    icon[i].css("margin-left", banner_icon_margin);
+    icon[i].css("margin-right", banner_icon_margin);
     icon[i].find(".icon").css("left", 22.5);
     icon[i].find(".icon").css("top", 2);
   }
 
-  for(var i = 0; i < 4; i++){
+  for(var i = 0; i < 5; i++){
     icon_img[i].hover(
       function (){
         $(this).closest("div").find("p").fadeIn("slow");

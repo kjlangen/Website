@@ -7,7 +7,7 @@ $(document).ready(function () {
     var window_height = $(window).height();
     var difference = window_height - html_height;
     var number_fact = $("#number_fact");
-    var banner = $(".banner-wrapper");
+    var banner = $(".banner_wrapper");
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
     var icon_img = [];
 
