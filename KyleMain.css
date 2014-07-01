@@ -75,6 +75,12 @@ div #credit:hover{
   color: #A81818;
 }
 
+#exp_fill{
+  position: relative;
+  float: left;
+  color: #FFFFFF;
+}
+
 /**************************/
 /* Banner */
 .banner_wrapper{
@@ -143,12 +149,12 @@ div #credit:hover{
 }
 
 .projects{
-  top: 273px;
+  top: 270px;
   float: left;
 }
 
 .blog{
-  top: 273px;
+  top: 270px;
   float: right;
 }
 /**************************/

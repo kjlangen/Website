@@ -29,7 +29,7 @@ $(document).ready(function () {
     icon_img[i] = icon[i].find("img");
   }
 
-  var banner_icon_margin = (banner.width() - 5 * icon[0].width())/8;
+  var banner_icon_margin = (banner.width() - 5 * icon[0].width())/(icon_img.length*2);
 
   for(var i = 0; i < 5; i++){
     icon[i].css("margin-left", banner_icon_margin);
