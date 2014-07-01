@@ -10,6 +10,8 @@ $(document).ready(function () {
     var banner = $(".banner_wrapper");
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
     var icon_img = [];
+    var inner_text = [$('.work_experience')];
+    var fill = [$('#exp_fill')];
 
     for(var i = 0; i < 4; i++){
       icon_img[i] = icon[i].find("img");
@@ -55,4 +57,5 @@ $(document).ready(function () {
         }
       );
     }
+
 });

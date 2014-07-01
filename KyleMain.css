@@ -1,233 +1,86 @@
-body{
-  background-image:url('Background-maybe.jpg');
-  font-family: "Nova Square";
-}
+body{ background-image:url('Background-maybe.jpg'); font-family: "Nova Square";}
+h1{ color: #FFFFFF; }
+hr{ border-style: solid; border-color: #A81818; }
+a{ text-decoration: none; transition: text-shadow 0.5s; }
+footer{ position: relative; color: #FFFFFF;  text-align: center; font-size: 9pt; width 100px; margin: 0 auto; bottom: 0; }
+.clear_both{ clear:both; }
+.introduction{ color:white; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
+.one{ text-decoration: overline; }
+.body_wrapper{ width: 1200px; height: 100%; margin: 0 auto; }
 
-h1{
-  color: #FFFFFF;
-}
 
-hr{
-  border-style: solid;
-  border-color: #A81818;
-}
 
-a{
-  text-decoration: none;
-  transition: text-shadow 0.5s;
-}
 
-footer{
-  position: relative;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 9pt;
-  width 100px;
-  margin: 0 auto;
-  bottom: 0;
-}
+/* Center Hexagon */
+#exp_fill{ position:relative; float:left; margin: 0px 10px; top:-114px; color:#FFFFFF; width:480px; height:290px; display:none;}
+.et_logo{ position:relative; margin: 0 auto; width:150px; height:25px; bottom: 90px; background-size:cover; background-repeat:no-repeat; background-image:url("ExtremeTech-Logo.png"); }
+.uwaterloo{ position:relative; margin: 0 auto; width:132px; top:50px; }
+.uw_crest{ position:relative; float:left; margin-top:16px; width:30; height:37px; }
+.uw_name{ position:relative; float:left; text-align:center; }
+.c_lang{ position:relative; left:120px; top:8px; }
+.java_lang{ position:relative; left:60px; top:15px; }
+.post_lang{ position:relative; left:100px; top:20px; }
+.js_lang{ position:relative; text-align:right; right:125px; bottom:100px; }
+.html_lang{ position:relative; text-align:right; right:50px; bottom:90px; }
+.css_lang{ position:relative; text-align:right; right:120px; bottom:80px; }
 
-.clear_both{
-  clear:both;
-}
 
-.introduction{
-  color: white;
-  top: 40px;
-  padding: 20px;
-  position: relative;
-  font-size: 115%;
-  text-align: center;
-}
+/* Number Fact Hexagon */
+#number_fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#FFFFFF; font-size: 115%; }
+#credit{ top:30px; position:relative; padding:10px; magin: 0 auto; text-align:center; }
+div #credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
+.credit_link{ color:#A81818; }
 
-.one{
-  text-decoration: overline;
-}
 
-.body_wrapper{
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-}
 
-#number_fact{
-  position: relative;
-  padding: 0px 10px;
-  margin: 0 auto;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 115%;
-}
 
-#credit{
-  top: 30px;
-  position: relative;
-  padding: 10px;
-  magin: 0 auto;
-  text-align: center;
-}
-
-div #credit:hover{
-  text-shadow: 0px 0px 50px #FFFFFF;
-}
-
-.credit_link{
-  color: #A81818;
-}
-
-#exp_fill{
-  position: relative;
-  float: left;
-  color: #FFFFFF;
-}
-
-/**************************/
 /* Banner */
-.banner_wrapper{
-  position: relative;
-  margin: 0px auto 30px auto;
-  top: -8px;
-  width: 550px;
-  height: 40px;
-  background-image: url("Short Banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+.banner_wrapper{ position:relative; margin: 0px auto 30px auto; top:-8px; width:550px; height:40px; background-image:url("Short Banner.png"); background-size:cover; background-repeat:no-repeat; }
+.banner_item{ width:80px; height:85px; float:right; }
+.icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
+.icon_text{ display:none; color:#FFFFFF; text-align:center; }
 
-.banner_item{
-  width: 80px;
-  height: 85px;
-  float: right;
-}
 
-.icon{
-  height: 30px;
-  width: 35px;
-  position: relative;
-  margin: 0 auto;
-}
 
-.icon_text{
-  display: none;
-  color: #FFFFFF;
-  text-align: center;
-}
 
-/**************************/
+/* Exterior text */
+.name_first{ position:relative; text-align:center; margin-top:0px; margin-bottom:15px; font-size:50pt; color:#FFFFFF; }
 
-/**************************/
-/*Exterior text*/
 
-.name_first{
-  position: relative;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-size: 50pt;
-  color: #FFFFFF;
-}
-/**************************/
 
-/**************************/
-/*Centre Hexagaon Interior text*/
-.inner_text_wrapper{
-  position: relative;
-  text-align: center;
-  width: 250px;
-  margin: 0px;
-  z-index: 2;
-}
 
-.inner_text{
-  font-size: 35pt;
-  color: #A81818;
-}
+/* Centre Hexagaon Interior Text */
+.inner_text_wrapper{ position:relative; text-align:center; width:250px; margin:0px; z-index:2; }
+.inner_text{ font-size:35pt; color:#A81818; }
+.work_experience{ top:114px; margin: 0 auto; }
+.projects{ top:270px; float:left; }
+.blog{ top:270px; float:right; }
 
-.work_experience{
-  top: 114px;
-  margin: 0 auto;
-}
 
-.projects{
-  top: 270px;
-  float: left;
-}
 
-.blog{
-  top: 270px;
-  float: right;
-}
-/**************************/
 
-/**************************/
-/*Interior Text Links*/
-a.inner_text:hover{
-  text-shadow: 0px 0px 50px #FFFFFF;
-}
+/* Interior Text Links */
+a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
-/**************************/
 
-/**************************/
-/*Hexagon Wrappers*/
 
-.center_hex_wrapper{
-  width: 500px;
-  height: 580px;
-  margin: 30px 70px;
-  position: relative;
-  float: left;
-  background-image: url('TEST.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
-.left_hex_wrapper{
-  width: 280px;
-  height: 325px;
-  margin: 0px;
-  float: left;
-  background-image: url('TEST.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+/* Hexagon Wrappers */
+.center_hex_wrapper{ width:500px; height:580px; margin: 30px 70px; position:relative; float:left; background-image:url('TEST.png'); background-size:contain; background-repeat:no-repeat; }
+.left_hex_wrapper{ width:280px; height:325px; margin:0px; float:left; background-image:url('TEST.png'); background-size:contain; background-repeat:no-repeat; }
+.right_hex_wrapper{ width:280px; height:325px; margin:0px; float:right; background-image:url('TEST.png'); background-size:contain; background-repeat:no-repeat; }
 
-.right_hex_wrapper{
-  width: 280px;
-  height: 325px;
-  margin: 0px;
-  float: right;
-  background-image: url('TEST.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-/**************************/
 
-/**************************/
-/*Inner red lines*/
 
-.inner_leftright{
-  width: 250px;
-  height: 144px;
-  position: absolute;
-  top: 144px;
-}
 
-.inner_vertical{
-  width: 2px;
-  height: 292px;
-  position: absolute;
-  left: 249px;
-  bottom: 2px;
-}
+/* Inner red lines */
+.inner_leftright{ width:250px; height:144px; position:absolute; top:144px; }
+.inner_vertical{ width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
+.inner_left{ left:0px;}
+.inner_right{ right:0px; }
 
-.inner_left{
-  left: 0px;
-}
 
-.inner_right{
-  right: 0px;
-}
-/**************************/
+
 
 /*Color Hex Values:
 #FFFFFF White
