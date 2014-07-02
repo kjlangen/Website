@@ -64,19 +64,36 @@ $(document).ready(function () {
     for(var i = 0; i < 1; i++){
       var first = (i + 1) % 3;
       var second = (i + 2) % 3;
+      var x_dist, y_dist;
+
+      //Set how far lines must move
+      if(i == 0){
+      	x_dist = 0;
+	y_dist = 125;
+      }
+      else if(i == 1){
+        x_dist = 250;
+        y_dist = -125;
+      }
+      else if(i == 2){
+        x_dist = -250;
+        y_dist = -125;
+      }
+
+      //On hover, animate
       inner_text[i].hover(
 	function (){
 	  inner_text[first].fadeOut("fast");
 	  inner_text[second].fadeOut("fast");
 	  inner_lines[second].fadeOut("fast");
-	  inner_lines[i].animate({top:"+=125"});
-	  inner_lines[first].animate({top:"+=125"});
+	  inner_lines[i].animate({top:"+=" + y_dist, left:"+=" + x_dist});
+	  inner_lines[first].animate({top:"+=" + y_dist, left:"+=" + x_dist});
 	  fill[i].fadeIn("slow");
 	},
 	function (){
 	  fill[i].fadeOut("slow");
-	  inner_lines[i].animate({top:"-=125"});
-	  inner_lines[first].animate({top:"-=125"});
+	  inner_lines[i].animate({top:"-=" + y_dist, left:"-=" + x_dist});
+	  inner_lines[first].animate({top:"-=" + y_dist, left:"-=" + x_dist});
 	  inner_lines[second].fadeIn("fast");
 	  inner_text[first].fadeIn("fast");
 	  inner_text[second].fadeIn("fast");
