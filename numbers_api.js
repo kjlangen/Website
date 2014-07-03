@@ -11,7 +11,7 @@ $(document).ready(function () {
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
     var icon_img = [];
     var inner_text = [$(".work_experience"),$(".projects"),$(".blog")];
-    var inner_lines = [$(".inner_right"),$(".inner_left"),$(".inner_vertical")];
+    var inner_lines = [$("#inner_right"),$("#inner_left"),$("#vertical")];
     var fill = [$("#exp_fill")];
 
     //Initialize icon_img array
@@ -52,10 +52,10 @@ $(document).ready(function () {
     for(var i = 0; i < 4; i++){
       icon_img[i].hover(
         function (){
-          $(this).closest("div").find("p").fadeIn("slow");
+          $(this).closest("div").find("p").stop().fadeIn("slow");
         },
         function (){
-          $(this).closest("div").find("p").fadeOut("slow");
+          $(this).closest("div").find("p").stop().fadeOut("slow");
         }
       );
     }
@@ -86,21 +86,18 @@ $(document).ready(function () {
 	  inner_text[first].fadeOut("fast");
 	  inner_text[second].fadeOut("fast");
 	  inner_lines[second].fadeOut("fast");
-	  inner_lines[i].addClass("animate");
-	  inner_lines[first].addClass("animate");
-	  $(".animate").animate({top:"+=" + y_dist, left:"+=" + x_dist});
+	  inner_lines[i].stop().animate({top:"+=" + y_dist, left:"+=" + x_dist});
+	  inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + x_dist});
 	  fill[i].fadeIn("slow");
 	},
 	function (){
 	  fill[i].fadeOut("slow");
-	  $(".animate").animate({top:"-=" + y_dist, left:"-=" + x_dist});
-	  inner_lines[i].removeClass("animate");
-	  inner_lines[first].removeClass("animate");
+	  inner_lines[i].stop().animate({top:"-=" + y_dist, left:"-=" + x_dist});
+	  inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + x_dist});
 	  inner_lines[second].fadeIn("fast");
 	  inner_text[first].fadeIn("fast");
 	  inner_text[second].fadeIn("fast");
 	}
       );
     }
-
 });
