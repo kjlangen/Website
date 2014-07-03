@@ -10,7 +10,7 @@ $(document).ready(function () {
     var banner = $(".banner_wrapper");
     var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin")];
     var icon_img = [];
-    var inner_text = [$(".work_experience"),$(".projects"),$(".blog")];
+    var inner_text = [$("#workexp_link"),$("#projects_link"),$("#blog_link")];
     var inner_lines = [$("#inner_right"),$("#inner_left"),$("#vertical")];
     var fill = [$("#exp_fill")];
 
@@ -30,13 +30,28 @@ $(document).ready(function () {
                             $("#credit").css("top", text_distance_down);
       });
     }
+    
+    function animate_hexagon(j, left_dist, y_dist){
+      var first = (j + 1) % 3;
+      var second = (j + 2) % 3;
 
-    function animate_hexagon(first, second, j, css_obj){
-      inner_lines[first].stop().animate(css_obj);
-      inner_lines[j].stop().animate(css_obj);
-      inner_lines[second].stop().fadeToggle("fast");
-      inner_text[first].stop().fadeToggle("fast");
-      inner_text[second].stop().fadeToggle("fast");
+      
+      inner_text[j].hover(
+        function(){
+	  inner_lines[second].stop().fadeToggle("fast", false);
+	  inner_text[first].stop().fadeToggle("fast", false);
+	  inner_text[second].stop().fadeToggle("fast", false);
+	  inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
+	  inner_lines[j].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
+        },
+        function(){
+	  inner_lines[second].stop().fadeToggle("fast",false);
+	  inner_text[first].stop().fadeToggle("fast",false);
+	  inner_text[second].stop().fadeToggle("fast",false);
+	  inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
+	  inner_lines[j].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
+        }
+      );
     }
 
     //Get and display number fact from Numbers API
@@ -70,9 +85,6 @@ $(document).ready(function () {
 
     //On Hover Animate Center Hex
     for(var i = 0; i < 1; i++){
-      var first = (i + 1) % 3;
-      var second = (i + 2) % 3;
-      var x_dist, y_dist;
 
       //Set how far lines must move
       if(i == 0){
@@ -88,10 +100,7 @@ $(document).ready(function () {
         y_dist = -125;
       }
 
-      //On hover, animate
-      inner_text[i].hover(
-	animate_hexagon(first, second, i, {top:"+=" + y_dist, left:"+=" + x_dist}),
-	animate_hexagon(first, second, i, {top:"-=" + y_dist, left:"-=" + x_dist})
-      );
+      //Call function to animate on hover
+      animate_hexagon(i, x_dist, y_dist);
     }
 });

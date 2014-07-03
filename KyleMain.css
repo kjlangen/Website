@@ -1,19 +1,19 @@
 body{ background-image:url('Background-maybe.jpg'); font-family: "Nova Square";}
-h1{ color: #FFFFFF; }
-hr{ border-style: solid; border-color: #A81818; }
-a{ text-decoration: none; transition: text-shadow 0.5s; }
-footer{ position: relative; color: #FFFFFF;  text-align: center; font-size: 9pt; width 100px; margin: 0 auto; bottom: 0; }
+h1{ color:#FFFFFF; }
+hr{ border-style:solid; border-color:#A81818; }
+a{ text-decoration:none; transition: text-shadow 0.5s; }
+footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; width:100px; margin: 0 auto; bottom:0px; }
 .clear_both{ clear:both; }
 .introduction{ color:white; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
-.one{ text-decoration: overline; }
-.body_wrapper{ width: 1200px; height: 100%; margin: 0 auto; }
+.one{ text-decoration:overline; }
+.body_wrapper{ width:1200px; height:100%; margin: 0 auto; }
 
 
 
 
 /* Center Hexagon */
 #exp_fill{ position:relative; float:left; margin: 0px 10px; top:-114px; color:#FFFFFF; width:480px; height:290px; display:none;}
-.et_logo{ position:relative; margin: 0 auto; width:150px; height:25px; bottom: 90px; background-size:cover; background-repeat:no-repeat; background-image:url("ExtremeTech-Logo.png"); }
+.et_logo{ position:relative; margin: 0 auto; width:150px; height:25px; bottom:90px; background-size:cover; background-repeat:no-repeat; background-image:url("ExtremeTech-Logo.png"); }
 .uwaterloo{ position:relative; margin: 0 auto; width:132px; top:50px; }
 .uw_crest{ position:relative; float:left; margin-top:16px; width:30; height:37px; }
 .uw_name{ position:relative; float:left; text-align:center; }
@@ -23,6 +23,8 @@ footer{ position: relative; color: #FFFFFF;  text-align: center; font-size: 9pt;
 .js_lang{ position:relative; text-align:right; right:125px; bottom:100px; }
 .html_lang{ position:relative; text-align:right; right:50px; bottom:90px; }
 .css_lang{ position:relative; text-align:right; right:120px; bottom:80px; }
+
+
 
 
 /* Number Fact Hexagon */
@@ -78,13 +80,6 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 .inner_vertical{ width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
 #inner_left{ left:0px;}
 #inner_right{ right:0px; }
-
-
-
-
-/* Animate Classes */
-.animate{}
-
 
 
 
