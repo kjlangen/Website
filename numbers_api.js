@@ -31,6 +31,14 @@ $(document).ready(function () {
       });
     }
 
+    function animate_hexagon(first, second, j, css_obj){
+      inner_lines[first].stop().animate(css_obj);
+      inner_lines[j].stop().animate(css_obj);
+      inner_lines[second].stop().fadeToggle("fast");
+      inner_text[first].stop().fadeToggle("fast");
+      inner_text[second].stop().fadeToggle("fast");
+    }
+
     //Get and display number fact from Numbers API
     get_num_fact();
 
@@ -82,22 +90,8 @@ $(document).ready(function () {
 
       //On hover, animate
       inner_text[i].hover(
-	function (){
-	  inner_text[first].fadeOut("fast");
-	  inner_text[second].fadeOut("fast");
-	  inner_lines[second].fadeOut("fast");
-	  inner_lines[i].stop().animate({top:"+=" + y_dist, left:"+=" + x_dist});
-	  inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + x_dist});
-	  fill[i].fadeIn("slow");
-	},
-	function (){
-	  fill[i].fadeOut("slow");
-	  inner_lines[i].stop().animate({top:"-=" + y_dist, left:"-=" + x_dist});
-	  inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + x_dist});
-	  inner_lines[second].fadeIn("fast");
-	  inner_text[first].fadeIn("fast");
-	  inner_text[second].fadeIn("fast");
-	}
+	animate_hexagon(first, second, i, {top:"+=" + y_dist, left:"+=" + x_dist}),
+	animate_hexagon(first, second, i, {top:"-=" + y_dist, left:"-=" + x_dist})
       );
     }
 });
