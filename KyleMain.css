@@ -27,7 +27,7 @@ footer{ position: relative; color: #FFFFFF;  text-align: center; font-size: 9pt;
 
 /* Number Fact Hexagon */
 #number_fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#FFFFFF; font-size: 115%; }
-#credit{ top:30px; position:relative; padding:10px; magin: 0 auto; text-align:center; }
+#credit{ top:30px; position:relative; padding:10px; margin: 0 auto; text-align:center; }
 div #credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 .credit_link{ color:#A81818; }
 
@@ -78,6 +78,13 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 .inner_vertical{ width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
 .inner_left{ left:0px;}
 .inner_right{ right:0px; }
+
+
+
+
+/* Animate Classes */
+.animate{}
+
 
 
 
