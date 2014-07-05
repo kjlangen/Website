@@ -76,12 +76,17 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 /* Inner red lines */
-.inner_leftright{ width:250px; height:144px; position:absolute; top:144px; }
-.inner_vertical{ width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
-#inner_left{ left:0px;}
+.inner_leftright{ -webkit-transition: -webkit-transform 2s; width:250px; height:144px; position:absolute; top:144px; }
+.inner_vertical{ -webkit-transition: -webkit-transform 2s; width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
+#inner_left{ left:0px; }
 #inner_right{ right:0px; }
 
 
+
+/* Animate Classes */
+.forward0{ -webkit-transform:translate(0px,210px); }
+.forward1{ -webkit-transform:translate(180px,-104px); }
+.forward2{ -webkit-transform:translate(-180px,-104px); }
 
 
 /*Color Hex Values:

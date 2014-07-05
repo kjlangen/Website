@@ -30,26 +30,32 @@ $(document).ready(function () {
                             $("#credit").css("top", text_distance_down);
       });
     }
-    
+
     function animate_hexagon(j, left_dist, y_dist){
       var first = (j + 1) % 3;
       var second = (j + 2) % 3;
 
-      
+
+
+
       inner_text[j].hover(
         function(){
-	  inner_lines[second].stop().fadeToggle("fast", false);
-	  inner_text[first].stop().fadeToggle("fast", false);
-	  inner_text[second].stop().fadeToggle("fast", false);
-	  inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
-	  inner_lines[j].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
+          inner_lines[second].stop().fadeToggle("fast",false);
+          inner_text[first].stop().fadeToggle("fast",false);
+          inner_text[second].stop().fadeToggle("fast",false);
+          //inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
+          //inner_lines[j].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
+          inner_lines[first].addClass("forward" + j);
+          inner_lines[j].addClass("forward" + j);
         },
         function(){
-	  inner_lines[second].stop().fadeToggle("fast",false);
-	  inner_text[first].stop().fadeToggle("fast",false);
-	  inner_text[second].stop().fadeToggle("fast",false);
-	  inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
-	  inner_lines[j].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
+          inner_lines[second].stop().fadeToggle("slow",false);
+          inner_text[first].stop().fadeToggle("slow",false);
+          inner_text[second].stop().fadeToggle("slow",false);
+          //inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
+          //inner_lines[j].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
+          inner_lines[first].removeClass("forward" + j);
+          inner_lines[j].removeClass("forward" + j);
         }
       );
     }
