@@ -31,20 +31,15 @@ $(document).ready(function () {
       });
     }
 
-    function animate_hexagon(j, left_dist, y_dist){
+    function animate_hexagon(j){
       var first = (j + 1) % 3;
       var second = (j + 2) % 3;
-
-
-
 
       inner_text[j].hover(
         function(){
           inner_lines[second].stop().fadeToggle("fast",false);
           inner_text[first].stop().fadeToggle("fast",false);
           inner_text[second].stop().fadeToggle("fast",false);
-          //inner_lines[first].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
-          //inner_lines[j].stop().animate({top:"+=" + y_dist, left:"+=" + left_dist});
           inner_lines[first].addClass("forward" + j);
           inner_lines[j].addClass("forward" + j);
         },
@@ -52,8 +47,6 @@ $(document).ready(function () {
           inner_lines[second].stop().fadeToggle("slow",false);
           inner_text[first].stop().fadeToggle("slow",false);
           inner_text[second].stop().fadeToggle("slow",false);
-          //inner_lines[first].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
-          //inner_lines[j].stop().animate({top:"-=" + y_dist, left:"-=" + left_dist});
           inner_lines[first].removeClass("forward" + j);
           inner_lines[j].removeClass("forward" + j);
         }
@@ -90,23 +83,9 @@ $(document).ready(function () {
     }
 
     //On Hover Animate Center Hex
-    for(var i = 0; i < 1; i++){
-
-      //Set how far lines must move
-      if(i == 0){
-      	x_dist = 0;
-	y_dist = 125;
-      }
-      else if(i == 1){
-        x_dist = 250;
-        y_dist = -125;
-      }
-      else if(i == 2){
-        x_dist = -250;
-        y_dist = -125;
-      }
+    for(var i = 0; i < 3; i++){
 
       //Call function to animate on hover
-      animate_hexagon(i, x_dist, y_dist);
+      animate_hexagon(i);
     }
 });
