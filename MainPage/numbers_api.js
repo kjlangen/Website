@@ -12,7 +12,7 @@ $(document).ready(function () {
     var icon_img = [];
     var inner_text = [$("#workexp_link"),$("#projects_link"),$("#blog_link")];
     var inner_lines = [$("#inner_right"),$("#inner_left"),$("#vertical")];
-    var fill = [$("#exp_fill")];
+    var fill = [$("#exp_fill"),$("#proj_fill"),$("#blog_fill")];
 
     //Initialize icon_img array
     for(var i = 0; i < 4; i++){
@@ -42,8 +42,10 @@ $(document).ready(function () {
           inner_text[second].stop().fadeToggle("fast",false);
           inner_lines[first].addClass("forward" + j);
           inner_lines[j].addClass("forward" + j);
+          fill[j].stop().fadeIn(3500,false);
         },
         function(){
+          fill[j].stop().fadeOut("slow",false);
           inner_lines[second].stop().fadeToggle("slow",false);
           inner_text[first].stop().fadeToggle("slow",false);
           inner_text[second].stop().fadeToggle("slow",false);

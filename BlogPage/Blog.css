@@ -1,5 +1,5 @@
 body{
-  background-image: url('../Background-maybe.jpg');
+  background-image: url('../Static Assets/Background.jpg');
   background-repeat: no-repeat;
   font-family: "Nova Square";
 }
@@ -38,9 +38,6 @@ body{
 }
 
 .date{
-  /*background-image: url('../TEST.png');
-  background-repeat: no-repeat;
-  background-size: contain;*/
   margin: 0px 15px;
   width: 100px;
   height: 115px;
@@ -65,7 +62,7 @@ body{
   top: -8px;
   width: 650px;
   height: 39px;
-  background-image: url("../Test Banner2.png");
+  background-image: url("../Static Assets/Banner/Long Banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

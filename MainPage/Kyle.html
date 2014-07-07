@@ -30,7 +30,7 @@
             <div class="banner_item" id="facebook">
 
                 <a href="https://www.facebook.com/kyle.langendoen">
-                    <img class="icon" src="Facebook-logo.png">
+                    <img class="icon" src="../Static Assets/Banner/Facebook-logo.png">
                 </a>
 
                 <p class="icon_text">
@@ -42,7 +42,7 @@
             <div class="banner_item" id="github">
 
                 <a href="https://github.com/kjlangen">
-                    <img class="icon" src="Github-logo.png">
+                    <img class="icon" src="../Static Assets/Banner/Github-logo.png">
                 </a>
 
                 <p class="icon_text">
@@ -53,8 +53,8 @@
 
             <div class="banner_item" id="resume">
 
-                <a href="Resume.html">
-                    <img class="icon" src="Resume-logo.png">
+                <a href="../Resume/Resume.html">
+                    <img class="icon" src="../Static Assets/Banner/Resume-logo.png">
                 </a>
 
                 <p class="icon_text">
@@ -65,7 +65,7 @@
 
             <div class="banner_item" id="linkedin">
                 <a href="http://www.linkedin.com/pub/kyle-langendoen/89/811/330">
-                    <img class="icon" src="Linkdin-logo.png">
+                    <img class="icon" src="../Static Assets/Banner/Linkdin-logo.png">
                 </a>
 
                 <p class="icon_text">
@@ -98,57 +98,97 @@
             <div class="center_hex_wrapper">
 
                 <div class="inner_text_wrapper work_experience">
-                    <a class="inner_text" id="workexp_link" href="LandingPage.html">Experience</a>
+                    <a class="inner_text" id="workexp_link" href="../LandingPage/LandingPage.html">Experience</a>
                 </div>
 
                 <div class="inner_text_wrapper projects" href="https://www.google.ca">
-                    <a class="inner_text" id="projects_link" href="LandingPage.html">Projects</a>
+                    <a class="inner_text" id="projects_link" href="../LandingPage/LandingPage.html">Projects</a>
                 </div>
 
                 <div class="inner_text_wrapper blog">
-                    <a class="inner_text" id="blog_link" href="BlogPage/Blog.html">Blog</a>
+                    <a class="inner_text" id="blog_link" href="../BlogPage/Blog.html">Blog</a>
                 </div>
 
-                <img class="inner_leftright" id="inner_left"  src="Innerlinesleft.png">
+                <img class="inner_leftright" id="inner_left"  src="../Static Assets/Hexagon/Innerlinesleft.png">
 
-                <img class="inner_leftright" id="inner_right" src="Innerlinesright.png">
+                <img class="inner_leftright" id="inner_right" src="../Static Assets/Hexagon/Innerlinesright.png">
 
-                <img class="inner_vertical" id="vertical" src="Innervertical.png">
+                <img class="inner_vertical" id="vertical" src="../Static Assets/Hexagon/Innervertical.png">
 
                 <div id="exp_fill">
 
                     <div class="clear_both"></div>
 
-                    <p class="c_lang">
-                        char experience = 'C';
-                    </p>
-
-                    <p class="java_lang">
-                        public class Java{};
-                    </p>
-
-                    <p class="post_lang">
-                        SELECT PostgreSQL FROM expereince;
-                    </p>
-
-                    <p class="js_lang">
-                        var exp = JS;
-                    </p>
-
-                    <p class="html_lang">
-                       &lt;HTML&gt;
-                    </p>
-
-                    <p class="css_lang">
-                        .experience&#123; CSS: yes&#59; &#125;
+                    <p>
+                        char experience = '<span class="language">C</span>';
+                        <br>
+                        <br>
+                        public class <span class="language">Java</span>{};
+                        <br>
+                        <br>
+                        SELECT <span class="language">PostgreSQL</span> FROM expereince;
+                        <br>
+                        <br>
+                        var exp = <span class="language">JS</span>;
+                        <br>
+                        <br>
+                        &lt;<span class="language">HTML</span>&gt;
+                        <br>
+                        <br>
+                        .experience&#123; <span class="language">CSS</span>: yes&#59; &#125;
                     </p>
 
                 </div>
 
-                <div id="projects_fill">
+                <div id="proj_fill">
+
+                    <div class="server_proj proj_icons">
+
+                        <img class="server_icon" src="../Static Assets/Other Icons/DB-icon.png">
+
+                        <p class="server_txt proj_icons">
+                            CentOS powered server
+                        </p>
+
+                    </div>
+
+                    <div class="clear_both"></div>
+
+                    <p class="website_proj proj_icons">
+                        <span class="language" style="font-size:16pt;">kylelangendoen.com</span> This website
+                    </p>
+
+                    <div class="clear_both"></div>
+
+                    <div class="conway_proj">
+                        <div class="conway_icon proj_icons">
+                            <div class="blue_square"></div>
+                            <div class="white_square"></div>
+                            <div class="blue_square"></div>
+                            <div class="blue_square"></div>
+                        </div>
+
+                        <p class="proj_icons">
+                            Conway's
+                            <br>
+                            Game of Life
+                        </p>
+                    </div>
+
                 </div>
 
                 <div id="blog_fill">
+
+                    <h1 class="blog_title">Literally Everyone</h1>
+
+                    <p class="blogtxt_one">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid
+                    </p>
+
+                    <p class="blogtxt_two">
+                        Posted: <span class="language">14:23 Jan 16 2014</span>
+                    </p>
+
                 </div>
 
             </div>
@@ -168,7 +208,7 @@
 
         <div class="clear_both"></div>
 
-        <script src="jquery-1.11.0.js"></script>
+        <script src="../jquery-1.11.0.js"></script>
         <script src="numbers_api.js"></script>
 
         <footer>Site Design by Natalie Langendoen &#169 2014</footer>
