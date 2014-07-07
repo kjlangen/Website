@@ -41,10 +41,10 @@ $(document).ready(function () {
   for(var i = 0; i < 5; i++){
     icon_img[i].hover(
       function (){
-        $(this).closest("div").find("p").fadeIn("slow");
+        $(this).closest("div").find("p").stop().fadeIn("slow");
       },
       function (){
-        $(this).closest("div").find("p").fadeOut("slow");
+        $(this).closest("div").find("p").stop().fadeOut("slow");
       }
     );
   }
