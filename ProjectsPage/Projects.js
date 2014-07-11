@@ -1,6 +1,14 @@
 $(document).ready(function () {
   "Use Strict";
 
+  var graphics = [$("#server_graphic"), $("#web_graphic"), $("#gol_graphic")];
+  var horiz;
+
+  for(var k = 0; k < graphics.length; k++){
+    horiz = 2 * graphics[k].find(".leftbrace").width() + graphics[k].find(".project_title").width();
+    graphics[k].width(horiz);
+  }
+
   //Equally space the banner items
   var banner = $(".banner_wrapper");
   var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin"), $("#home")];

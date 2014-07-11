@@ -1,91 +1,52 @@
-body{
-  background-image: url('../Static Assets/Background.jpg');
-  background-repeat: no-repeat;
-  font-family: "Nova Square";
-}
+body{ background-image: url('../Static Assets/Background.jpg'); background-repeat: no-repeat; font-family: "Nova Square"; }
 
-.body_wrapper{
-  width: 730px;
-  position: relative;
-  margin: 0 auto;
-}
 
-.blog_title{
-  top: -20px;
-  position: relative;
-  margin: 0 auto;
-  font-size: 50pt;
-  text-align: center;
-  color: #FFFFFF;
-}
 
-.title{
-  margin-top: 25px;
-  font-size: 32pt;
-  color: #A81818;
-}
+/*Banner Items*/
+.banner_wrapper{ position: relative; margin: 0px auto 30px auto; top: -8px; width: 650px; height: 39px; background-image: url("../Static Assets/Banner/Long Banner.png"); background-size: cover; background-repeat: no-repeat; }
+.banner_item{ width: 80px; height: 85px; float: right; }
+.icon{ height: 30px; width: 35px; position: relative; margin: 0 auto; }
+.icon_text{ display: none; color: #FFFFFF; text-align: center; }
 
-.content{
-  color: #CCCCC1;
-  padding: 0px 10px;
-  width: 580px;
-  float: right;
-}
 
-.content_wrapper{
-  position: relative;
-  margin: 0 auto;
-}
 
-.date{
-  margin: 0px 15px;
-  width: 100px;
-  height: 115px;
-  float: left;
-}
 
-.date_day{
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 12pt;
-}
+.content_wrapper{ position:relative; width:1200px; margin: 0 auto; }
 
-.date_time{
-  color: #CCCCC1;
-  text-align: left;
-  font-size: 12pt;
-}
 
-.banner_wrapper{
-  position: relative;
-  margin: 0px auto 30px auto;
-  top: -8px;
-  width: 650px;
-  height: 39px;
-  background-image: url("../Static Assets/Banner/Long Banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.banner_item{
-  width: 80px;
-  height: 85px;
-  float: right;
-}
 
-.icon{
-  height: 30px;
-  width: 35px;
-  position: relative;
-  margin: 0 auto;
-}
+.graphic{ position:relative; float:left; }
 
-.icon_text{
-  display: none;
-  color: #FFFFFF;
-  text-align: center;
-}
 
-.clear_both{
-  clear:both;
-}
+
+
+/*Title Items*/
+.title{ color:#FFFFFF; }
+.project_title{ position:relative; float:left; margin: 68px -15px; }
+
+
+
+
+/*Left/Right braces*/
+.leftbrace{ position:relative; float:left; width:90px; height:180px; }
+.rightbrace{ position:relative; float:left; width:90px; height:180px; }
+
+
+
+
+.skill_list{ position:relative; float:left; list-style-image:none; }
+li{ color:#A81818; font-size:14pt; }
+
+
+
+
+/*Descriptions*/
+.server_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
+.site_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
+.gol_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
+
+
+
+
+.clear_both{ clear:both; }
