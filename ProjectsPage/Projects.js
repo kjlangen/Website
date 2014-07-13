@@ -1,6 +1,11 @@
 $(document).ready(function () {
   "Use Strict";
 
+  //Align skill lists
+  $(".skill_list").css("margin-left",90);
+
+
+  //Setup title graphics
   var graphics = [$("#server_graphic"), $("#web_graphic"), $("#gol_graphic")];
   var horiz;
 
@@ -11,6 +16,7 @@ $(document).ready(function () {
 
   //Equally space the banner items
   var banner = $(".banner_wrapper");
+  var screen_width = $(window).width() - banner.width();
   var icon = [$("#facebook"), $("#github"), $("#resume"), $("#linkedin"), $("#home")];
 
   var icon_img = [];
