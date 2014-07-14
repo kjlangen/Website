@@ -42,10 +42,10 @@ $(document).ready(function () {
           inner_text[second].stop().fadeToggle("fast",false);
           inner_lines[first].addClass("forward" + j);
           inner_lines[j].addClass("forward" + j);
-          fill[j].stop().fadeIn(3500,false);
+          fill[j].stop().fadeIn(2000);
         },
         function(){
-          fill[j].stop().fadeOut("slow",false);
+          fill[j].stop().fadeOut("fast");
           inner_lines[second].stop().fadeToggle("slow",false);
           inner_text[first].stop().fadeToggle("slow",false);
           inner_text[second].stop().fadeToggle("slow",false);
