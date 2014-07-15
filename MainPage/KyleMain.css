@@ -1,7 +1,7 @@
 body{ background-image:url('../Static Assets/Background.jpg'); font-family: "Nova Square";}
 h1{ color:#FFFFFF; }
 hr{ border-style:solid; border-color:#A81818; }
-a{ text-decoration:none; transition: text-shadow 0.5s; }
+a{ text-decoration:none; -webkit-transition: text-shadow 1s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
 footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; margin: 0 auto; bottom:0px; }
 .clear_both{ clear:both; }
 .introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }

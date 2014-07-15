@@ -1,10 +1,6 @@
 $(document).ready(function () {
   "Use Strict";
 
-  //Align skill lists
-  $(".skill_list").css("margin-left",90);
-
-
   //Setup title graphics
   var graphics = [$("#server_graphic"), $("#web_graphic"), $("#gol_graphic")];
   var horiz;

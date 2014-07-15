@@ -17,7 +17,8 @@ hr{ width:600px; margin: 70px auto 100px auto; border-color:#A81818; }
 /*Title Items*/
 .title{ color:#FFFFFF; }
 .project_title{ position:relative; float:left; margin: 68px -15px; }
-.graphic{ position:relative; float:left; }
+.graphic_even{ position:relative; float:left; }
+.graphic_odd{ position:relative; float:right; }
 
 
 
@@ -28,7 +29,8 @@ hr{ width:600px; margin: 70px auto 100px auto; border-color:#A81818; }
 
 
 
-.skill_list{ position:relative; float:left; list-style:none; }
+.skill_list_even{ position:relative; float:right; list-style:none; margin-right:90px; text-align:right; }
+.skill_list_odd{ position:relative; float:left; list-style:none; margin-left:50px; }
 li{ color:#A81818; font-size:14pt; margin: 10px 0; }
 
 
@@ -36,7 +38,7 @@ li{ color:#A81818; font-size:14pt; margin: 10px 0; }
 
 /*Descriptions*/
 .server_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
-.site_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
+.site_desc{ position:relative; float:right; width:50%; margin: 1em 2em; color:#CCCCC1; }
 .gol_desc{ position:relative; float:left; width:50%; margin: 1em 2em; color:#CCCCC1; }
 
 
