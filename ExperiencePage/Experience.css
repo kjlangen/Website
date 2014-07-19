@@ -9,6 +9,10 @@ body{ background-image: url('/Website/Static Assets/Background.jpg'); background
 .icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
 .icon_text{ display:none; color:#FFFFFF; text-align:center; }
 
-
+/*Timeline Stuff*/
+.timeline{}
+.time_vertical{ position:relative; background-color:#FFFFFF; width:4px; height:300px; margin-left:26px; }
+.time_hex{ width:56px; height:75px; margin:-20px 0px; background-image:url("/Website/Static Assets/Other Icons/Timeline-Node.png"); background-repeat:no-repeat; background-size:cover; }
+.now{ color:#A81818; font-size:20pt; margin: 30px 0px; }
 
 .clear_both{ clear:both; }
