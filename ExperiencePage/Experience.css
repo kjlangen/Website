@@ -1,5 +1,5 @@
 body{ background-image: url('/Website/Static Assets/Background.jpg'); background-repeat: no-repeat; background-attachment:fixed; font-family: "Nova Square"; }
-
+p{ color:#FFFFFF; }
 
 
 
@@ -9,10 +9,33 @@ body{ background-image: url('/Website/Static Assets/Background.jpg'); background
 .icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
 .icon_text{ display:none; color:#FFFFFF; text-align:center; }
 
+
+
+
 /*Timeline Stuff*/
-.timeline{}
-.time_vertical{ position:relative; background-color:#FFFFFF; width:4px; height:300px; margin-left:26px; }
-.time_hex{ width:56px; height:75px; margin:-20px 0px; background-image:url("/Website/Static Assets/Other Icons/Timeline-Node.png"); background-repeat:no-repeat; background-size:cover; }
-.now{ color:#A81818; font-size:20pt; margin: 30px 0px; }
+.timeline{ position:relative; margin:10px; width:37.5px; float:left; }
+.time_vertical{ position:relative; background-color:rgba(48,95,163,0.9); width:2px; height:250px; margin: 50px auto; }
+.time_hex{ width:37.5px; height:50px; background-image:url("/Website/Static Assets/Other Icons/Timeline-Node.png"); background-repeat:no-repeat; background-size:cover; }
+.now{ color:#A81818; font-size:20pt; text-align:center; width:70px; margin: 30px auto; }
+
+
+
+
+/*Icon formatting*/
+.extreme_icon{ position:relative; }
+.uwaterloo_icon{ position:relative; width:70px; height:95px; float:left; }
+.uwaterloo_text{ position:relative; margin: 10px 20px; font-size:23pt; text-align:center; float:left; }
+
+
+
+/*Text formatting*/
+.extreme_description{ position:relative; width:400px;}
+.uwaterloo_description{ position:relative; width:400px;}
+
+
+
+.timeline_wrapper{ position:relative; margin: 0 auto; width:900px; }
+.logo_flow{ float:left; }
+.description_flow{ float:right; }
 
 .clear_both{ clear:both; }
