@@ -21,7 +21,13 @@ $(document).ready(function () {
 
     function get_num_fact(){
       $.get("http://numbersapi.com/" + rand + "/math",
-            function (data){number_fact.text(data);
+            function (data){
+                            if(data != ""){
+                              number_fact.text(data);
+                            }
+                            else{
+                              number_fact.text("Sorry, looks like Numbers API isn't working right now. :(");
+                            }
                             var quote_height = number_fact.height();
                             var hexagon_height = $(".right_hex_wrapper").height();
                             var credit_height = $("#credit").height();
