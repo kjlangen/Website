@@ -42,4 +42,11 @@ $(document).ready(function () {
       }
     );
   }
+
+  //Space timeline Logos/Text down the page
+  var extreme_icon = $(".extreme_icon");
+  var waterloo_icon = $(".uwaterloo_logo");
+  waterloo_icon.css("margin-top", 250 + waterloo_icon.height()/2 - extreme_icon.height()/2);
+  extreme_icon.css("margin-top", 250 + extreme_icon.height()/2);
+
 });
