@@ -2,14 +2,14 @@ $(document).ready(function () {
   "Use Strict";
 
   //Center Timeline
-  var timeline_container = ($(".timeline_wrapper").width() - $(".timeline").width())/2;
+  /*var timeline_container = ($(".timeline_wrapper").width() - $(".timeline").width())/2;
   var timeline_left_margin = timeline_container - $(".logo_flow").width();
   var timeline_right_margin = timeline_container - $(".description_flow").width();
   window.console.log($(".logo_flow").width());
   window.console.log($(".description_flow").width());
 
   $(".logo_flow").css("margin-left", timeline_left_margin);
-  $(".timeline").css("margin-right", timeline_right_margin);
+  $(".timeline").css("margin-right", timeline_right_margin);*/
 
 
   //Equally space the banner items
