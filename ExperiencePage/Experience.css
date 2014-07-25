@@ -11,6 +11,8 @@ p{ color:#FFFFFF; margin: 5px auto; }
 
 
 
+/*Timeline Description Stuff*/
+.timechunk_content{ position:relative; margin: 100px auto 0px auto; width:1000px; }
 
 /*Timeline Stuff*/
 .timeline{ position:relative; }
@@ -18,6 +20,7 @@ p{ color:#FFFFFF; margin: 5px auto; }
 .time_hex{ width:37.5px; height:50px; background-image:url("/Website/Static Assets/Other Icons/Timeline-Node.png"); background-repeat:no-repeat; background-size:cover; }
 .now{ color:#A81818; font-size:20pt; text-align:center; width:70px; margin-left:auto; margin-right:auto; margin-top:30px; }
 .quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); width:200px; height:30px; margin:2px; float:left; text-align:center; }
+.red_select{ border-width:2px 0px; border-style: solid;  border-color:#A81818; }
 
 
 
@@ -35,7 +38,7 @@ p{ color:#FFFFFF; margin: 5px auto; }
 
 
 
-.timeline_wrapper{ position:relative; margin: 0 auto; width:900px; }
+.timeline_wrapper{ position:relative; margin: 50px auto; width:816px; }
 .logo_flow{ float:right; display:none; }
 .description_flow{ float:right; display:none; }
 

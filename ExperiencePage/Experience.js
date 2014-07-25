@@ -11,6 +11,14 @@ $(document).ready(function () {
   $(".logo_flow").css("margin-left", timeline_left_margin);
   $(".timeline").css("margin-right", timeline_right_margin);*/
 
+  //Center Timeline
+  var timechunk_content = $(".timechunk_content");
+  var timeline_wrapper = $(".timeline_wrapper");
+  var num_timeline_pieces = $(".quarter").length;
+
+  timeline_wrapper.width(num_timeline_pieces * 204);
+  timechunk_content.height($(document).height() * 3/5);
+
 
   //Equally space the banner items
   var banner = $(".banner_wrapper");
@@ -43,10 +51,9 @@ $(document).ready(function () {
     );
   }
 
-  //Space timeline Logos/Text down the page
-  var extreme_icon = $(".extreme_icon");
-  var waterloo_icon = $(".uwaterloo_logo");
-  waterloo_icon.css("margin-top", 250 + waterloo_icon.height()/2 - extreme_icon.height()/2);
-  extreme_icon.css("margin-top", 250 + extreme_icon.height()/2);
+  //On Window Resize
+  $(window).resize(function(){
+    timechunk_content.height($(document).height() * 3/5);
+  });
 
 });
