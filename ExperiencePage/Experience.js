@@ -19,6 +19,30 @@ $(document).ready(function () {
   timeline_wrapper.width(num_timeline_pieces * 204);
   timechunk_content.height($(document).height() * 3/5);
 
+  //Highlight Timeline Segment
+  var quarters = [$("#q1"), $("#q2"), $("#q3"), $("#q4"), $("q5")];
+  var timeline = $(".timeline");
+
+  timeline.scroll(function(data){
+    //Find what element red_select is On
+    //Move it to the next element
+    console.log(data);
+  });
+  console.log(quarters[1]);
+
+
+  /*quarters[1].hover(
+      function(){quarters[1].addClass("red_select");},
+      function(){quarters[1].removeClass("red_select");}
+    );
+
+  for(var k = 0; k < 5; ++k){
+    quarters[k].hover(
+      function(){quarters[k].addClass("red_select");},
+      function(){quarters[i].removeClass("red_select");}
+    );
+  }*/
+
 
   //Equally space the banner items
   var banner = $(".banner_wrapper");
