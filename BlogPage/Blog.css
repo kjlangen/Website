@@ -6,7 +6,7 @@ body{ background-image: url('/Website/Static Assets/Background.jpg'); background
 /*Blog title and content*/
 .blog_title{ top: -20px; position: relative; margin: 0 auto; font-size: 50pt; text-align: center; color: #FFFFFF; }
 .title{ margin-top: 25px; font-size: 32pt; color: #A81818; }
-.content{ color: #CCCCC1; padding: 0px 10px; width: 580px; float: right; }
+.content{ color: #CCCCC1; padding: 0px 10px; width: 580px; float: right; line-height:2em; }
 .content_wrapper{ position: relative; margin: 0 auto; }
 
 
