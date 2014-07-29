@@ -22,6 +22,16 @@ hr{ width:600px; margin: 70px auto 100px auto; border-color:#A81818; }
 
 
 
+/*Project Icons*/
+.project_icon{ position:relative; margin: 0px auto;  display:block; }
+#db{ width:40px; height:50px; }
+#web{ color:#305FA3; font-size:16pt; width:300px; text-align:center; }
+.white_square{ position:relative; margin:2px; float:left; background-color:#FFFFFF; width:15px; height:15px; }
+.blue_square{ position:relative; margin:2px; float:left; background-color:#305FA3; width:15px; height:15px; }
+.conway_icon{ position:relative; width:42px; height:42px; }
+
+
+
 /*Left/Right braces*/
 .leftbrace{ position:relative; float:left; width:90px; height:180px; }
 .rightbrace{ position:relative; float:left; width:90px; height:180px; }

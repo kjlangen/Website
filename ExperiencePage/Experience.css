@@ -1,5 +1,5 @@
 body{ background-image: url('/Website/Static Assets/Background.jpg'); background-repeat: no-repeat; background-attachment:fixed; font-family: "Nova Square", cursive; }
-p{ color:#CCCCC1; margin: 5px auto; }
+p{ color:#CCCCC1; }
 ul{ position:relative; float:right; }
 a{ color:#CCCCC1; text-decoration:none; }
 
@@ -22,12 +22,11 @@ a{ color:#CCCCC1; text-decoration:none; }
 
 /*Timeline Stuff*/
 .timeline{ position:relative; }
-.time_vertical{ position:relative; background-color:rgba(48,95,163,0.9); width:2px; height:250px; margin: 25px auto; margin-top:0px; }
-.time_hex{ width:37.5px; height:50px; background-image:url("/Website/Static Assets/Other Icons/Timeline-Node.png"); background-repeat:no-repeat; background-size:cover; }
-.now{ color:#A81818; font-size:20pt; text-align:center; width:70px; margin-left:auto; margin-right:auto; margin-top:30px; }
 .quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); width:200px; height:30px; margin:2px; float:left; text-align:center; }
+.qtext{ margin: 5px auto; }
 .red_select{ border-width:2px 0px; border-style: solid;  border-color:#A81818; }
 .hide{ display:none; }
+
 
 
 
@@ -51,7 +50,7 @@ a{ color:#CCCCC1; text-decoration:none; }
 
 
 
-.timeline_wrapper{ position:relative; margin: 25px auto; width:816px; }
+.timeline_wrapper{ position:relative; margin: 25px auto 0px auto; width:816px; }
 .logo_flow{ float:right; display:none; }
 .description_flow{ float:right; display:none; }
 

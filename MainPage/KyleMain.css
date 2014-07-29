@@ -34,14 +34,14 @@ footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; mar
 /* Number Fact Hexagon */
 #number_fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#CCCCC1; font-size: 115%; }
 #credit{ top:30px; position:relative; padding:10px; margin: 0 auto; text-align:center; }
-div #credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
+div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 .credit_link{ color:#A81818; }
 
 
 
 
 /* Banner */
-.banner_wrapper{ position:relative; margin: 0px auto 30px auto; top:-8px; width:550px; height:40px; background-image:url("../Static Assets/Banner/Short Banner.png"); background-size:cover; background-repeat:no-repeat; }
+.banner_wrapper{ position:relative; margin: 0px auto 30px auto; top:-7px; width:550px; height:40px; background-image:url("../Static Assets/Banner/Short Banner.png"); background-size:cover; background-repeat:no-repeat; }
 .banner_item{ width:80px; height:85px; float:right; }
 .icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
 .icon_text{ display:none; color:#FFFFFF; text-align:center; }
