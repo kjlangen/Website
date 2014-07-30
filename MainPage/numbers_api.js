@@ -48,10 +48,10 @@ $(document).ready(function () {
           inner_text[second].stop().fadeToggle("fast",false);
           inner_lines[first].addClass("forward" + j);
           inner_lines[j].addClass("forward" + j);
-          fill[j].stop().fadeIn(2000);
+          fill[j].fadeIn(2000);
         },
         function(){
-          fill[j].stop().fadeOut("fast");
+          fill[j].stop().fadeOut(0);
           inner_lines[second].stop().fadeToggle("slow",false);
           inner_text[first].stop().fadeToggle("slow",false);
           inner_text[second].stop().fadeToggle("slow",false);
@@ -82,10 +82,10 @@ $(document).ready(function () {
     for(var i = 0; i < 4; i++){
       icon_img[i].hover(
         function (){
-          $(this).closest("div").find("p").stop().fadeIn("slow");
+          $(this).closest("div").find("p").stop(true, true).fadeIn("slow");
         },
         function (){
-          $(this).closest("div").find("p").stop().fadeOut("slow");
+          $(this).closest("div").find("p").stop(true, true).fadeOut("slow");
         }
       );
     }
