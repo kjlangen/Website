@@ -6,7 +6,7 @@ footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; mar
 .clear_both{ clear:both; }
 .introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
 .one{ text-decoration:overline; }
-.body_wrapper{ width:1200px; height:100%; margin: 0 auto; }
+.body_wrapper{ max-width:1200px; height:100%; margin: 0 auto; }
 
 
 
@@ -71,9 +71,9 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 /* Hexagon Wrappers */
-.center_hex_wrapper{ width:500px; height:580px; margin: 30px 70px; position:relative; float:left; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
-.left_hex_wrapper{ width:280px; height:325px; margin:0px; float:left; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
-.right_hex_wrapper{ width:280px; height:325px; margin:0px; float:right; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+.center_hex_wrapper{ width:500px; height:580px; margin: 30px auto; position:relative; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+.left_hex_wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+.right_hex_wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
 
 
 
@@ -101,3 +101,10 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 #202020 background grey
 #CCCCC1 Text grey
 */
+
+
+@media (min-width: 1200px){
+	.center_hex_wrapper{ margin: 30px 70px; float:left; }
+	.left_hex_wrapper{ float:left; }
+	.right_hex_wrapper{ float:right; }
+}
