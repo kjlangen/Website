@@ -1,26 +1,29 @@
-body{ background-image: url('/Website/Static Assets/Background.jpg'); background-repeat: no-repeat; font-family: "Nova Square"; }
-.body_wrapper{ width: 730px; position: relative; margin: 0 auto; }
+body{ background-image: url('/Website/Static Assets/Background.jpg'); background-repeat: no-repeat; background-attachment: fixed; font-family: "Nova Square"; }
+.body_wrapper{ max-width: 700px; position: relative; margin: 0 auto; }
+
 
 
 
 /*Blog title and content*/
-.blog_title{ top: -20px; position: relative; margin: 0 auto; font-size: 50pt; text-align: center; color: #FFFFFF; }
+.blog_title{ top: -10px; position: relative; margin: 0 auto; font-size: 50pt; text-align: center; color: #FFFFFF; }
 .title{ margin-top: 25px; font-size: 32pt; color: #A81818; }
-.content{ color: #CCCCC1; padding: 0px 10px; width: 580px; float: right; line-height:2em; }
-.content_wrapper{ position: relative; margin: 0 auto; }
+.content{ color: #CCCCC1; padding: 0 5%; line-height:2em; }
+.post_wrapper{ position: relative; margin: 0 auto; }
 
 
 
-/*Date poste*/
-.date{ margin: 0px 15px; width: 100px; height: 115px; float: left; }
-.date_day{ color: #FFFFFF; text-align: center; font-size: 12pt; }
-.date_time{ color: #CCCCC1; text-align: left; font-size: 12pt; }
+
+/*Date posted*/
+.date{ color: #305FA3; margin: 0px 15px; }
+
+
+
+
+/*Banner*/
 .banner_wrapper{ position: relative; margin: 0px auto 30px auto; top: -8px; width: 650px; height: 39px; background-image: url("/Website/Static Assets/Banner/Long Banner.png"); background-size: cover; background-repeat: no-repeat; }
-.banner_item{ width: 80px; height: 85px; float: right; }
-
-
-
-/*Icon*/
+.banner_item_wrapper{ width: 20%; float:left; }
+.banner_item{ width: 80px; height: 85px; margin: 0 auto; }
+.banner_item a{ width:35px; display:block; margin: 3px auto; }
 .icon{ height: 30px; width: 35px; position: relative; margin: 0 auto; }
 .icon_text{ display: none; color: #FFFFFF; text-align: center; }
 
@@ -28,3 +31,10 @@ body{ background-image: url('/Website/Static Assets/Background.jpg'); background
 
 
 .clear_both{ clear:both; }
+
+
+
+
+@media (max-width: 680px){
+	.banner_wrapper{ width:100%; background-image:none; border-bottom: 2px solid rgba(255,255,255,0.6); }
+}

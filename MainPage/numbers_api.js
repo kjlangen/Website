@@ -69,16 +69,6 @@ $(document).ready(function () {
       $("footer").css("bottom", -1 * difference);
     }
 
-    //Equally space the banner items
-    var margin_banner = (banner.width() - 4 * icon[0].width())/8;
-
-    for(var i = 0; i < 4; i++){
-      icon[i].css("margin-left", margin_banner);
-      icon[i].css("margin-right", margin_banner);
-      icon[i].find(".icon").css("left", 22.5);
-      icon[i].find(".icon").css("top", 2);
-    }
-
     for(var i = 0; i < 4; i++){
       icon_img[i].hover(
         function (){

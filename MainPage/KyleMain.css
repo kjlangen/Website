@@ -1,12 +1,13 @@
-body{ background-image:url('../Static Assets/Background.jpg'); font-family: "Nova Square";}
+body{ background-image:url('../Static Assets/Background.jpg'); font-family: "Nova Square"; }
 h1{ color:#FFFFFF; }
 hr{ border-style:solid; border-color:#A81818; }
-a{ text-decoration:none; -webkit-transition: text-shadow 1s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
-footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; margin: 0 auto; bottom:0px; }
+a{ text-decoration:none; -webkit-transition: text-shadow 0.5s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
+footer{ position:relative; color:#FFFFFF;  text-align:center; font-size:9pt; margin: 0 auto;}
 .clear_both{ clear:both; }
 .introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
 .one{ text-decoration:overline; }
 .body_wrapper{ max-width:1200px; height:100%; margin: 0 auto; }
+
 
 
 
@@ -41,7 +42,9 @@ div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 /* Banner */
 .banner_wrapper{ position:relative; margin: 0px auto 30px auto; top:-7px; width:550px; height:40px; background-image:url("../Static Assets/Banner/Short Banner.png"); background-size:cover; background-repeat:no-repeat; }
-.banner_item{ width:80px; height:85px; float:right; }
+.banner_item_wrapper{ width: 25%; float:left; }
+.banner_item{ width:80px; height:85px; margin: 0 auto; }
+.banner_item a{ width:35px; display:block; margin: 2px auto; }
 .icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
 .icon_text{ display:none; color:#FFFFFF; text-align:center; }
 
@@ -103,8 +106,12 @@ a.inner_text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 */
 
 
-@media (min-width: 1200px){
+@media (min-width: 1230px){
 	.center_hex_wrapper{ margin: 30px 70px; float:left; }
 	.left_hex_wrapper{ float:left; }
 	.right_hex_wrapper{ float:right; }
+}
+
+@media (max-width: 600px){
+	.banner_wrapper{ width:100%; background-image:none; border-bottom: 2px solid rgba(255,255,255,0.6); }
 }
