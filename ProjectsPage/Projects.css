@@ -1,6 +1,6 @@
 body{ background-image: url('/Website/Static Assets/Background.jpg'); background-repeat: no-repeat; background-attachment:fixed; font-family: "Nova Square"; }
 hr{ width:600px; margin: 70px auto 100px auto; border-color:#A81818; }
-.content_wrapper{ position:relative; width:1200px; margin: 100px auto;}
+.body_wrapper{ position:relative; max-width:1000px; margin: 100px auto; }
 
 
 
@@ -19,8 +19,9 @@ hr{ width:600px; margin: 70px auto 100px auto; border-color:#A81818; }
 /*Title Items*/
 .title{ color:#FFFFFF; }
 .project_title{ position:relative; float:left; margin: 68px -15px; }
-.graphic_even{ position:relative; float:left; }
-.graphic_odd{ position:relative; float:right; }
+.graphic_even{ position:relative; width:50%; margin: 0 auto; }
+.graphic_odd{ position:relative; width:50%; margin: 0 auto; }
+
 
 
 
@@ -57,3 +58,12 @@ li{ color:#A81818; font-size:14pt; margin: 10px 0; }
 
 
 .clear_both{ clear:both; }
+
+
+
+@media (min-width: 970px){
+	.graphic_even, .graphic_odd, .server_desc { width:100%; }
+}
+@media (max-width: 680px){
+	.banner_wrapper{ width:100%; background-image:none; border-bottom: 2px solid rgba(255,255,255,0.6); }
+}
