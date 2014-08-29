@@ -18,82 +18,75 @@
     <meta name="author" content="Kyle Langendoen">
     <meta charset="UTF-8">
     <link href="/Website/favicon.ico" rel="SHORTCUT ICON">
-    <link href="/Website/ExperiencePage/Experience.css" rel="stylesheet" type="text/css">
+    <link href="/Website/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/Website/css/long-banner.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
   </head>
 
 
   <body>
 
-      <div class="banner_wrapper">
-        <div class="banner_item_wrapper">
-          <div class="banner_item" id="facebook">
-            <a href="https://www.facebook.com/kyle.langendoen">
-              <img class="icon" src="/Website/Static Assets/Banner/Facebook-logo.png">
-            </a>
+      <header class="banner-wrapper">
+        <div class="banner-item" id="facebook">
+          <a href="https://www.facebook.com/kyle.langendoen">
+            <img class="icon" src="/Website/Static Assets/Banner/Facebook-logo.png">
+          </a>
 
-            <p class="icon_text">
-              Facebook
-            </p>
-          </div>
+          <p class="icon-text">
+            Facebook
+          </p>
+        </div>
+        
+        <div class="banner-item" id="github">
+          <a href="https://github.com/kjlangen">
+            <img class="icon" src="/Website/Static Assets/Banner/Github-logo.png">
+          </a>
+
+          <p class="icon-text">
+            Github
+          </p>
         </div>
 
-        <div class="banner_item_wrapper">
-          <div class="banner_item" id="github">
-            <a href="https://github.com/kjlangen">
-              <img class="icon" src="/Website/Static Assets/Banner/Github-logo.png">
-            </a>
+        <div class="banner-item" id="home">
+          <a href="/Website/MainPage/Kyle.html">
+            <img class="icon" src="/Website/Static Assets/Banner/Home-Icon.png">
+          </a>
 
-            <p class="icon_text">
-              Github
-            </p>
-          </div>
+          <p class="icon-text">
+            Home
+          </p>
         </div>
 
-        <div class="banner_item_wrapper">
-          <div class="banner_item" id="home">
-            <a href="../MainPage/Kyle.html">
-              <img class="icon" src="/Website/Static Assets/Banner/Home-Icon.png">
-            </a>
+        
+        <div class="banner-item" id="resume">
+          <a href="/Website/Resume/Resume.html">
+            <img class="icon" src="/Website/Static Assets/Banner/Resume-logo.png">
+          </a>
 
-            <p class="icon_text">
-              Home
-            </p>
-          </div>
+          <p class="icon-text">
+            Resume
+          </p>
         </div>
 
-        <div class="banner_item_wrapper">
-          <div class="banner_item" id="resume">
-            <a href="../Resume/Resume.html">
-              <img class="icon" src="/Website/Static Assets/Banner/Resume-logo.png">
-            </a>
+        
+        <div class="banner-item" id="linkedin">
+          <a href="http://www.linkedin.com/pub/kyle-langendoen/89/811/330">
+            <img class="icon" src="/Website/Static Assets/Banner/Linkdin-logo.png">
+          </a>
 
-            <p class="icon_text">
-              Resume
-            </p>
-          </div>
+          <p class="icon-text">
+            LinkedIn
+          </p>
         </div>
+      </header>
 
-        <div class="banner_item_wrapper">
-          <div class="banner_item" id="linkedin">
-            <a href="http://www.linkedin.com/pub/kyle-langendoen/89/811/330">
-              <img class="icon" src="/Website/Static Assets/Banner/Linkdin-logo.png">
-            </a>
+      <div class="timechunk-content">
 
-            <p class="icon_text">
-              LinkedIn
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="timechunk_content">
-
-          <img class="background_hexes" src="/Website/Static Assets/Hexagon/background hexes.png">
+          <img class="background-hexes" src="/Website/Static Assets/Hexagon/background hexes.png">
 
           <div class="hide" id="f2013content">
               <a href="http://uwaterloo.ca">
-                  <img class="image uwaterloo_icon" src="/Website/Static Assets/Other Icons/UW.png">
+                  <img class="image uwaterloo-icon" src="/Website/Static Assets/Other Icons/UW.png">
               </a>
 
               <div class="description">
@@ -102,7 +95,7 @@
                   <br>
                   <br>
                   <br>
-                  <span class="i_did">What I Studied:</span>
+                  <span class="i-did">What I Studied:</span>
                   <ul>
                       <li>Math 135. An introductory course into mathematical proofs and techniques; this was done in the context of basic algebraic systems: integers, integers modulo n, rationals, reals and complex numbers.</li>
                       <br>
@@ -114,7 +107,7 @@
 
           <div class="hide" id="w2013content">
               <a href="http://uwaterloo.ca">
-                  <img class="image uwaterloo_icon" src="/Website/Static Assets/Other Icons/UW.png">
+                  <img class="image uwaterloo-icon" src="/Website/Static Assets/Other Icons/UW.png">
               </a>
 
               <div class="description">
@@ -123,7 +116,7 @@
                   <br>
                   <br>
                   <br>
-                  <span class="i_did">What I Studied:</span>
+                  <span class="i-did">What I Studied:</span>
                   <ul>
                       <li>Math 135. An introductory course into mathematical proofs and techniques; this was done in the context of basic algebraic systems: integers, integers modulo n, rationals, reals and complex numbers.</li>
                       <br>
@@ -135,7 +128,7 @@
 
           <div class="hide" id="sp2014content">
               <a href="http://www.etcweb.com">
-                  <img class="image extreme_icon" src="/Website/Static Assets/Other Icons/extreme.png">
+                  <img class="image extreme-icon" src="/Website/Static Assets/Other Icons/extreme.png">
               </a>
 
               <div class="description">
@@ -144,7 +137,7 @@
                   <br>
                   <br>
                   <br>
-                  <span class="i_did">What I Did:</span>
+                  <span class="i-did">What I Did:</span>
                   <ul>
                       <li>Designed and implemented automatic scheduling software for <a href="http://www.gameonmobile.com">Game on Mobile</a>. Both the backend and the frontend form were created by myself using their PHP framework.</li>
                       <br>
@@ -159,7 +152,7 @@
 
       </div>
 
-      <div class="timeline_wrapper">
+      <div class="timeline-wrapper">
 
           <div class="timeline">
 
@@ -171,7 +164,7 @@
                   <p class="qtext">Fall 2013</p>
               </div>
 
-              <div class="quarter red_select" id="w2013">
+              <div class="quarter red-select" id="w2013">
                   <p class="qtext">Winter 2013</p>
               </div>
 
@@ -184,14 +177,14 @@
               </div>
           </div>
 
-          <div class="logo_flow">
+          <div class="logo-flow">
 
 
 
-              <div class="uwaterloo_logo">
-                  <img class="uwaterloo_icon" src="/Website/Static Assets/Other Icons/UW.png">
+              <div class="uwaterloo-logo">
+                  <img class="uwaterloo-icon" src="/Website/Static Assets/Other Icons/UW.png">
 
-                  <p class="uwaterloo_text">
+                  <p class="uwaterloo-text">
                       University of
                       <br>
                       Waterloo
@@ -203,7 +196,7 @@
 
       </div>
 
-      <script src="/Website/jquery-1.11.0.js"></script>
-      <script src="/Website/ExperiencePage/Experience.js"></script>
+      <script src="/Website/js/jquery-1.11.0.js"></script>
+      <script src="/Website/js/numbers-api.js"></script>
   </body>
 </html>

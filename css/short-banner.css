@@ -1,0 +1,6 @@
+/* Short Banner */
+.banner-wrapper{ position:relative; margin: 0px auto 30px auto; top:-7px; width:550px; height:40px; background-image:url("../Static Assets/Banner/Short Banner.png"); background-size:cover; background-repeat:no-repeat; }
+.banner-item{ width: 25%; position:relative; float: left; height:85px; }
+.banner-item a{ width:35px; display:block; margin: 2px auto; }
+.icon{ height:30px; width:35px; position:relative; margin: 0 auto; }
+.icon-text{ display:none; color:#FFFFFF; text-align:center; }

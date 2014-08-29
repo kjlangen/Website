@@ -1,0 +1,153 @@
+/*Color Hex Values:
+#FFFFFF White
+#A81818 red
+#438EDE sky blue
+#313131 dark grey
+#202020 background grey
+#CCCCC1 Text grey
+*/
+
+
+
+/* HTML Tags */
+body{ background-image:url('../Static Assets/Background.jpg'); background-attachment: fixed; font-family: "Nova Square"; }
+h1{ position:relative; text-align:center; margin-top:0.25em; margin-bottom:0.25em; font-size:50pt; color:#FFFFFF; }
+hr{ border-style:solid; border-color:#A81818; }
+a{ text-decoration:none; -webkit-transition: text-shadow 0.5s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
+footer{ position:relative; float:left; color:#FFFFFF; text-align:center; font-size:9pt; width: 50%; margin: 0 25%; }
+p{ color:#CCCCC1; }
+ul{ position:relative; float:right; }
+a{ color:#CCCCC1; text-decoration:none; }
+
+
+
+/* Misc */
+.clear-both { clear: both; }
+.introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
+.one{ text-decoration:overline; }
+.body-wrapper{ max-width:1200px; position: relative; margin: 0 auto; }
+.hide{ display:none; }
+
+
+
+/* Center Hexagon */
+#exp-fill{ position:relative; margin: 0 auto; top:65px; text-align:center; color:#FFFFFF; display:none; }
+.language{ color:#305FA3; }
+#proj-fill{ position:relative; margin: 0 auto; color:#FFFFFF; display:none; }
+.white-square{ position:relative; margin:2px; float:left; background-color:#FFFFFF; width:15px; height:15px; }
+.blue-square{ position:relative; margin:2px; float:left; background-color:#305FA3; width:15px; height:15px; }
+.conway-icon{ position:relative; width:42px; height:42px; }
+.conway-proj{ position:relative; width:200px; float:right; margin: 40px 55px 0px 0px; }
+.server-icon{ position:relative; width:40px; height:50px; margin:0px 10px; bottom:10px; }
+.proj-icons{ float:left; margin:5px; }
+.server-proj{ position:relative; margin: 40px 0px 0px 50px; width:300px; height:50px; }
+.website-proj{ margin: 50px 0px 40px 50px; }
+#blog-fill{ position:relative; float:right; width:400px; display:none; }
+.post-title{ position:relative; margin: 14px 0px 10px 70px; color:#305FA3; }
+.blogtxt-one{ position:relative; word-wrap:normal; width:350px; margin: 20px; 0px; 0px 200px; color:#FFFFFF; font-size:115%; }
+.blogtxt-two{ position:relative; word-wrap:normal; width:150px; margin: 40px 0px 0px 50px; color:#FFFFFF; font-size:115%; }
+
+
+
+
+/* Number Fact Hexagon */
+#number-fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#CCCCC1; font-size: 115%; }
+#credit{ top:30px; position:relative; padding:10px; margin: 0 auto; text-align:center; }
+div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
+.credit-link{ color:#A81818; }
+
+
+
+
+/* Hexagon Wrappers */
+.center-hex-wrapper{ width:500px; height:580px; margin: 30px auto; position:relative; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+.left-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+.right-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('../Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
+
+
+
+
+ 
+
+/* Centre Hexagaon Interior Text */
+.inner-text-wrapper{ position:relative; text-align:center; width:250px; height:57px; margin:0px; z-index:2; }
+.inner-text{ font-size:35pt; color:#A81818; }
+.work-experience{ top:114px; margin: 0 auto; }
+.projects{ top:270px; float:left; }
+.blog{ top:270px; float:right; }
+
+
+
+
+/* Interior Text Links */
+a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
+
+
+
+
+/* Inner red lines */
+.inner-leftright{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:250px; height:144px; position:absolute; top:144px; }
+.inner-vertical{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
+#inner-left{ left:0px; }
+#inner-right{ right:0px; }
+
+
+
+
+/*Blog title and content*/
+.title{ margin-top: 25px; font-size: 32pt; color: #A81818; }
+.content{ color: #CCCCC1; padding: 0 5%; line-height:2em; }
+.post-wrapper{ position: relative; margin: 0 auto; }
+.date{ color: #305FA3; margin: 0px 15px; }
+
+
+
+
+/*Timeline Stuff*/
+.timeline{ position:relative; }
+.quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); width:200px; height:30px; margin:2px; float:left; text-align:center; }
+.qtext{ margin: 5px auto; }
+.red-select{ border-width:2px 0px; border-style: solid;  border-color:#A81818; }
+.timechunk-content{ position:relative; margin: 100px auto 0px auto; width:1000px; }
+.timeline-wrapper{ position:relative; margin: 25px auto 0px auto; width:816px; }
+
+
+
+
+/*Icon formatting*/
+.extreme-icon{ position:relative; float:left; }
+.uwaterloo-icon{ position:relative; float:left; }
+.uwaterloo-text{ position:relative; margin: 10px 0px 10px 20px; font-size:23pt; text-align:center; float:left; }
+.uwaterloo-logo{ position:relative; float:left; width:290px; }
+.background-hexes{ position:absolute; left:0px; }
+
+
+
+
+/*Text formatting*/
+.extreme-description{ display:none; position:relative; width:400px;}
+.uwaterloo-description{ display:none; position:relative; width:400px;}
+.about{ color:#305FA3; font-size:16pt; }
+.i-did{ color:#A81818; font-size:16pt; }
+.description{ position:relative; float:right; width:500px; font-size:13pt; color:#CCCCC1; }
+
+
+
+
+/* ANIMATION */
+.forward0{ -webkit-transform:translate(0px,210px); -moz-transform:translate(0px,210px); -o-transform:translate(0px,210px); -ms-transform:translate(0px,210px); }
+.forward1{ -webkit-transform:translate(180px,-104px); -moz-transform:translate(180px,-104px); -o-transform:translate(180px,-104px); -ms-transform:translate(180px,-104px); }
+.forward2{ -webkit-transform:translate(-180px,-104px); -moz-transform:translate(-180px,-104px); -o-transform:translate(-180px,-104px); -ms-transform:translate(-180px,-104px); }
+
+
+
+
+/* RESPONSIVE */
+@media (min-width: 1230px){
+	.center-hex-wrapper{ margin: 30px 70px; float:left; }
+	.left-hex-wrapper{ float:left; }
+	.right-hex-wrapper{ float:right; }
+}
+@media (max-width: 600px){
+	.banner-wrapper{ width:100%; background-image:none; border-bottom: 2px solid rgba(255,255,255,0.6); }
+}
