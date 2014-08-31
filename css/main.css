@@ -8,7 +8,6 @@
 */
 
 
-
 /* HTML Tags */
 body{ background-image:url('../Static Assets/Background.jpg'); background-attachment: fixed; font-family: "Nova Square"; }
 h1{ position:relative; text-align:center; margin-top:0.25em; margin-bottom:0.25em; font-size:50pt; color:#FFFFFF; }
@@ -18,6 +17,7 @@ footer{ position:relative; float:left; color:#FFFFFF; text-align:center; font-si
 p{ color:#CCCCC1; }
 ul{ position:relative; float:right; }
 a{ color:#CCCCC1; text-decoration:none; }
+*{ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
 
 
@@ -26,7 +26,7 @@ a{ color:#CCCCC1; text-decoration:none; }
 .introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
 .one{ text-decoration:overline; }
 .body-wrapper{ max-width:1200px; position: relative; margin: 0 auto; }
-.hide{ display:none; }
+.hide{ display:none; overflow: hidden; }
 
 
 
@@ -103,33 +103,27 @@ a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
-/*Timeline Stuff*/
-.timeline{ position:relative; }
-.quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); width:200px; height:30px; margin:2px; float:left; text-align:center; }
-.qtext{ margin: 5px auto; }
+/*Timeline Styling*/
+.timeline-content-wrapper{ margin: 0 auto; width: 100%; max-width: 900px; }
+.timeline-wrapper{ position: relative; float: left; width: 100%; margin: 25px auto 0 auto; text-align: center; }
+.quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); display: inline-block; padding: 0.35em 2em; text-align:center; }
 .red-select{ border-width:2px 0px; border-style: solid;  border-color:#A81818; }
-.timechunk-content{ position:relative; margin: 100px auto 0px auto; width:1000px; }
-.timeline-wrapper{ position:relative; margin: 25px auto 0px auto; width:816px; }
+.timeline-content{ position:relative; margin: 100px auto 0px auto; }
+.about-organization{ max-width: 46%; padding-right: 1em; margin-top: 0; position: relative; float: right; }
+.extreme-description{ display:none; position:relative; width:400px;}
+.uwaterloo-description{ display:none; position:relative; width:400px;}
+.about{ color:#305FA3; font-size:16pt; }
+.i-did{ display: block; color:#A81818; font-size: 18pt; width: 100%; text-align: center; }
+.description{ position:relative; float: left; width: 100%; font-size:13pt; color:#CCCCC1; }
+.description ul { padding: 0;}
+.description ul li { position: relative; float: left; width: 40%; margin-left: 5%; margin-top: 0.5em; }
 
 
 
 
 /*Icon formatting*/
-.extreme-icon{ position:relative; float:left; }
-.uwaterloo-icon{ position:relative; float:left; }
-.uwaterloo-text{ position:relative; margin: 10px 0px 10px 20px; font-size:23pt; text-align:center; float:left; }
-.uwaterloo-logo{ position:relative; float:left; width:290px; }
+.timeline-icon{ position:relative; float:left; max-width: 46%; padding-left: 1em; margin-top: 1em;}
 .background-hexes{ position:absolute; left:0px; }
-
-
-
-
-/*Text formatting*/
-.extreme-description{ display:none; position:relative; width:400px;}
-.uwaterloo-description{ display:none; position:relative; width:400px;}
-.about{ color:#305FA3; font-size:16pt; }
-.i-did{ color:#A81818; font-size:16pt; }
-.description{ position:relative; float:right; width:500px; font-size:13pt; color:#CCCCC1; }
 
 
 
