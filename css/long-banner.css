@@ -1,5 +1,5 @@
 /*Long Banner*/
-.banner-wrapper{ position: relative; margin: 0px auto 30px auto; top: -8px; width: 650px; height: 39px; background-image: url("/Website/Static Assets/Banner/Long Banner.png"); background-size: cover; background-repeat: no-repeat; }
+.banner-wrapper{ position: relative; margin: 0 auto; top: -8px; width: 650px; height: 39px; background-image: url("/Website/Static Assets/Banner/Long Banner.png"); background-size: cover; background-repeat: no-repeat; }
 .banner-item{ position: relative; float: left; width: 20%; height: 85px; }
 .banner-item a{ width:35px; display: block; margin: 3px auto; }
 .icon{ height: 30px; width: 35px; position: relative; margin: 0 auto; }
