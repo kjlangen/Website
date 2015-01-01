@@ -9,9 +9,12 @@
 
 
 /* HTML Tags */
-body{ background-image:url('/Website/Static Assets/Background.jpg'); background-attachment: fixed; font-family: "Nova Square"; }
-h1{ position:relative; text-align:center; margin-top:0.25em; margin-bottom:0.25em; font-size:50pt; color:#FFFFFF; }
-hr{ border-style:solid; border-color:#A81818; }
+body{ margin:0px; background-color: white; font-family: "Nova Square"; }
+header{ margin-top:0px; padding: 0.1em; height:4em; }
+h1{ position:relative; margin: 0.3em 0; text-align:left; font-size: 18pt; color: white; font-family:"Nova Square"; }
+
+hr{ border-style:solid; border-color:#D9D9D9; }
+
 a{ text-decoration:none; -webkit-transition: text-shadow 0.5s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
 footer{ position:relative; float:left; color:#FFFFFF; text-align:center; font-size:9pt; width: 50%; margin: 0 25%; }
 p{ color:#CCCCC1; }
@@ -23,14 +26,30 @@ a{ color:#CCCCC1; text-decoration:none; }
 
 /* Misc */
 .clear-both { clear: both; width: 100%; }
-.introduction{ color:#CCCCC1; top:40px; padding:20px; position:relative; font-size:115%; text-align:center; }
-.one{ text-decoration:overline; }
-.body-wrapper{ max-width:1200px; position: relative; margin: 3em auto; }
+
+.introduction{ color: #CCCCC1; top: 40px; padding: 20px; position: relative; font-size: 115%; text-align: center; }
+.one{ text-decoration: overline; }
+
 .hide{ display:none; overflow: hidden; }
 
 
+/*
+-----------------------
+MAIN STYLING
+-----------------------
+*/
+.banner{ background-color: #D9D9D9; }
 
-/* Center Hexagon */
+.main-wrapper{ max-width: 50%; margin: 0 auto; }
+.main-accent{ width: 55%; height: 3em; margin: 5em auto 0 auto; background-color: white; }
+.accent{ width: 42%; position: relative; float: left; }
+.square{ width: 16%; height: 3em; position: relative; float: left; }
+.main-content{ width: 75%; height: 20em; background-color: purple; position: relative; float: left; }
+.main-side{ width: 25%; height: 20em; background-color: yellow; position: relative; float: left; }
+
+.bubbles{ width: 4px; margin: 0.5em; background-color: green; }
+.bubble{ width: 4px; height: 4px; margin: 3px 0; background-color: red; position: relative; float: left; border-radius: 5px; }
+/* Center Hexagon
 #exp-fill{ position:relative; margin: 0 auto; top:65px; text-align:center; color:#FFFFFF; display:none; }
 .language{ color:#305FA3; }
 #proj-fill{ position:relative; margin: 0 auto; color:#FFFFFF; display:none; }
@@ -50,7 +69,7 @@ a{ color:#CCCCC1; text-decoration:none; }
 
 
 
-/* Number Fact Hexagon */
+/* Number Fact Hexagon
 #number-fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#CCCCC1; font-size: 115%; }
 #credit{ top:30px; position:relative; padding:10px; margin: 0 auto; text-align:center; }
 div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
@@ -59,7 +78,7 @@ div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
-/* Hexagon Wrappers */
+/* Hexagon Wrappers
 .center-hex-wrapper{ width:500px; height:580px; margin: 30px auto; position:relative; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
 .left-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
 .right-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
@@ -67,7 +86,7 @@ div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
-/* Centre Hexagaon Interior Text */
+/* Centre Hexagaon Interior Text
 .inner-text-wrapper{ position:relative; text-align:center; width:250px; height:57px; margin:0px; z-index:2; }
 .inner-text{ font-size:35pt; color: #A81818; }
 .work-experience{ top:114px; margin: 0 auto; }
@@ -77,13 +96,13 @@ div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
-/* Interior Text Links */
+/* Interior Text Links
 a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
 
-/* Inner red lines */
+/* Inner red lines
 .inner-leftright{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:250px; height:144px; position:absolute; top:144px; }
 .inner-vertical{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
 #inner-left{ left:0px; }
@@ -92,7 +111,7 @@ a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 
 
 
-/*Blog title and content*/
+/*Blog title and content
 .blog-body-wrapper{ max-width: 800px; position: relative; margin: 0 auto; }
 .title{ margin-top: 25px; font-size: 32pt; color: #A81818; }
 .content{ color: #CCCCC1; padding: 0 5%; line-height:2em; }
@@ -167,8 +186,11 @@ Timeline Styling
 
 
 
-
-/* RESPONSIVE */
+/*
+-----------------------
+RESPONSIVE STYLING
+-----------------------
+*/
 @media (min-width: 1230px){
 	.center-hex-wrapper{ margin: 30px 70px; float:left; }
 	.left-hex-wrapper{ float:left; }
