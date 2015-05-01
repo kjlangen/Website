@@ -16,12 +16,9 @@ HTML TAGS
 -----------------------
 */
 body{ margin: 0px; background: url('E:/Website/Static Assets/selesnya.png') no-repeat top center; font-family: 'Open Sans' sans-serif; }
-header{ margin-top: 0px; padding:  0.1em; height: 4em; }
 h1{ width: 40%; margin: 0.5em 30% 0 30%; text-align: center; font-size:  42pt; font-family:  'Open Sans' sans-serif; }
 a{ text-decoration: none; color: inherit;}
-footer{ position: relative; float: left; color: #FFFFFF; text-align: center; font-size: 9pt; width:  50%; margin:  0 25%; }
 p{ font: 400  1.25em 'Open Sans' serif; }
-/*{ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }*/
 
 
 
@@ -64,13 +61,6 @@ BLOG STYLING
 .post-wrapper{ width: 100%; }
 .post-title{ color: black; font-weight: 700; font-size: 1.875em; }
 .date{ font-size: 1em; }
-
-
-
-/* ANIMATION */
-.forward0{ -webkit-transform: translate(0px,210px); -moz-transform: translate(0px,210px); -o-transform: translate(0px,210px); -ms-transform: translate(0px,210px); }
-.forward1{ -webkit-transform: translate(180px,-104px); -moz-transform: translate(180px,-104px); -o-transform: translate(180px,-104px); -ms-transform: translate(180px,-104px); }
-.forward2{ -webkit-transform: translate(-180px,-104px); -moz-transform: translate(-180px,-104px); -o-transform: translate(-180px,-104px); -ms-transform: translate(-180px,-104px); }
 
 
 
