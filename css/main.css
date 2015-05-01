@@ -69,11 +69,7 @@ BLOG STYLING
 RESPONSIVE STYLING
 -----------------------
 */
-@media (min-width:  1230px){
-	.center-hex-wrapper{ margin:  30px 70px; float: left; }
-	.left-hex-wrapper{ float: left; }
-	.right-hex-wrapper{ float: right; }
-}
-@media (max-width:  600px){
-	.banner-wrapper{ width: 100%; background-image: none; border-bottom:  2px solid rgba(255,255,255,0.6); }
+@media (max-width:  750px){
+	h1{ width: 90%; margin: 0.5em 5% 0 5%; }
+	.nav-wrapper{ width: 90%; margin: 0.5em 5% 0 5%; }
 }
