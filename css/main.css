@@ -1,6 +1,7 @@
-/*Color Hex Values:
+/*Color Hex Values: 
 #FFFFFF White
 #A81818 red
+#4965a0 fb blue
 #438EDE sky blue
 #313131 dark grey
 #202020 background grey
@@ -8,29 +9,20 @@
 */
 
 
-/* HTML Tags */
-body{ margin:0px; background-color: white; font-family: "Nova Square"; }
-header{ margin-top:0px; padding: 0.1em; height:4em; }
-h1{ position:relative; margin: 0.3em 0; text-align:left; font-size: 18pt; color: white; font-family:"Nova Square"; }
 
-hr{ border-style:solid; border-color:#D9D9D9; }
+/*
+-----------------------
+HTML TAGS
+-----------------------
+*/
+body{ margin: 0px; background: url('E:/Website/Static Assets/selesnya.png') no-repeat top center; font-family: 'Open Sans' sans-serif; }
+header{ margin-top: 0px; padding:  0.1em; height: 4em; }
+h1{ width: 40%; margin: 0.5em 30% 0 30%; text-align: center; font-size:  42pt; font-family:  'Open Sans' sans-serif; }
+a{ text-decoration: none; color: inherit;}
+footer{ position: relative; float: left; color: #FFFFFF; text-align: center; font-size: 9pt; width:  50%; margin:  0 25%; }
+p{ font: 400  1.25em 'Open Sans' serif; }
+/*{ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }*/
 
-a{ text-decoration:none; -webkit-transition: text-shadow 0.5s; -moz-transition: text-shadow 0.5s; -o-transition: text-shadow 0.5s; transition: text-shadow 0.5s; }
-footer{ position:relative; float:left; color:#FFFFFF; text-align:center; font-size:9pt; width: 50%; margin: 0 25%; }
-p{ color:#CCCCC1; }
-ul{ position:relative; float:right; }
-a{ color:#CCCCC1; text-decoration:none; }
-*{ box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; font-family: tahoma; }
-
-
-
-/* Misc */
-.clear-both { clear: both; width: 100%; }
-
-.introduction{ color: #CCCCC1; top: 40px; padding: 20px; position: relative; font-size: 115%; text-align: center; }
-.one{ text-decoration: overline; }
-
-.hide{ display:none; overflow: hidden; }
 
 
 /*
@@ -38,86 +30,20 @@ a{ color:#CCCCC1; text-decoration:none; }
 MAIN STYLING
 -----------------------
 */
-.banner{ background-color: #D9D9D9; }
-
-.main-wrapper{ max-width: 50%; margin: 0 auto; }
-.main-accent{ width: 55%; height: 3em; margin: 5em auto 0 auto; background-color: white; }
-.accent{ width: 42%; position: relative; float: left; }
-.square{ width: 16%; height: 3em; position: relative; float: left; }
-.main-content{ width: 75%; height: 20em; background-color: purple; position: relative; float: left; }
-.main-side{ width: 25%; height: 20em; background-color: yellow; position: relative; float: left; }
-
-.bubbles{ width: 4px; margin: 0.5em; background-color: green; }
-.bubble{ width: 4px; height: 4px; margin: 3px 0; background-color: red; position: relative; float: left; border-radius: 5px; }
-/* Center Hexagon
-#exp-fill{ position:relative; margin: 0 auto; top:65px; text-align:center; color:#FFFFFF; display:none; }
-.language{ color:#305FA3; }
-#proj-fill{ position:relative; margin: 0 auto; color:#FFFFFF; display:none; }
-.white-square{ position:relative; margin:2px; float:left; background-color:#FFFFFF; width:15px; height:15px; }
-.blue-square{ position:relative; margin:2px; float:left; background-color:#305FA3; width:15px; height:15px; }
-.conway-icon{ position:relative; width:42px; height:42px; }
-.conway-proj{ position:relative; width:200px; float:right; margin: 40px 55px 0px 0px; }
-.server-icon{ position:relative; width:40px; height:50px; margin:0px 10px; bottom:10px; }
-.proj-icons{ float:left; margin:5px; }
-.server-proj{ position:relative; margin: 40px 0px 0px 50px; width:300px; height:50px; }
-.website-proj{ margin: 50px 0px 40px 50px; }
-#blog-fill{ position:relative; float:right; width:400px; display:none; }
-.post-title{ position:relative; margin: 14px 0px 10px 70px; color:#305FA3; }
-.blogtxt-one{ position:relative; word-wrap:normal; width:350px; margin: 20px; 0px; 0px 200px; color:#FFFFFF; font-size:115%; }
-.blogtxt-two{ position:relative; word-wrap:normal; width:150px; margin: 40px 0px 0px 50px; color:#FFFFFF; font-size:115%; }
+.main-wrapper{ max-width: 50%; margin: 4em auto; }
+.main-content{ max-width: 90%; margin: 5% auto; }
 
 
 
-
-/* Number Fact Hexagon
-#number-fact{ position:relative; padding: 0px 10px; margin: 0 auto; text-align:center; color:#CCCCC1; font-size: 115%; }
-#credit{ top:30px; position:relative; padding:10px; margin: 0 auto; text-align:center; }
-div#credit:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
-.credit-link{ color:#A81818; }
-
-
-
-
-/* Hexagon Wrappers
-.center-hex-wrapper{ width:500px; height:580px; margin: 30px auto; position:relative; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
-.left-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
-.right-hex-wrapper{ width:280px; height:325px; margin:0 auto; background-image:url('/Website/Static Assets/Hexagon/Hexagon.png'); background-size:contain; background-repeat:no-repeat; }
-
-
-
-
-/* Centre Hexagaon Interior Text
-.inner-text-wrapper{ position:relative; text-align:center; width:250px; height:57px; margin:0px; z-index:2; }
-.inner-text{ font-size:35pt; color: #A81818; }
-.work-experience{ top:114px; margin: 0 auto; }
-.projects{ top:270px; float:left; }
-.blog{ top:270px; float:right; }
-
-
-
-
-/* Interior Text Links
-a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
-
-
-
-
-/* Inner red lines
-.inner-leftright{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:250px; height:144px; position:absolute; top:144px; }
-.inner-vertical{-webkit-transition: -webkit-transform 1s; transition: transform 1s; width:2px; height:292px; position:absolute; left:249px; bottom:2px; }
-#inner-left{ left:0px; }
-#inner-right{ right:0px; }
-
-
-
-
-/*Blog title and content
-.blog-body-wrapper{ max-width: 800px; position: relative; margin: 0 auto; }
-.title{ margin-top: 25px; font-size: 32pt; color: #A81818; }
-.content{ color: #CCCCC1; padding: 0 5%; line-height:2em; }
-.post-wrapper{ position: relative; margin: 0 auto; }
-.date{ color: #305FA3; margin: 0px 15px; }
-
+/*
+-----------------------
+NAV BAR STYLING
+-----------------------
+*/
+.nav-wrapper{ width: 50%; margin: 0.5em auto 0 auto; }
+.nav{ list-style-type: none; margin: 0; color: #A81818; }
+.nav-item{ float: left; width: 20%; text-align: center; }
+.nav-item:hover{ text-decoration: underline; text-decoration-color: #4965a0; }
 
 
 
@@ -126,63 +52,25 @@ a.inner-text:hover{ text-shadow: 0px 0px 50px #FFFFFF; }
 PROJECT STYLING
 -----------------------
 */
-.project { margin: 0 auto; }
-.project-hex { width: 7.5em; height: 7em; }
-.project-title { text-align: center; width: 50%; margin: 0 auto; }
-.project-description { text-align: center; width: 50%; margin-left: auto; margin-right: auto; }
-
-.left-hex { position: relative; float: right; }
-.right-hex { position: relative; float: left; }
-.center-hex { margin: 0 auto; }
-
-.project-feature-left { position: relative; float: left; width: 35%; }
-.project-feature-right { position: relative; float: right; width: 35%; }
-
-.project-feature-left p { width: 65%; position: relative; float: right; text-align: left; padding: 1em; margin-right: -1em; border-top: 1px solid rgba(255,255,255,0.8); border-bottom: 1px solid rgba(255,255,255,0.8); }
-.project-feature-right p { width: 65%; position: relative; float: left; text-align: right; padding: 1em; margin-left: -1em; border-top: 1px solid rgba(255,255,255,0.8); border-bottom: 1px solid rgba(255,255,255,0.8); }
-
-.project-feature-left .p-border { position: relative; float: right; height: 5.6em; margin-top: 1em; }
-
-.top-hex-wrapper .center-hex { background-image: url('/Website/Static Assets/Hexagon/new-top-2.png'); background-size: contain; background-repeat: no-repeat; }
-.bottom-hex-wrapper .center-hex { background-image: url('/Website/Static Assets/Hexagon/new-bottom-2.png'); background-size: contain; background-repeat: no-repeat; }
-
+.project{ margin: 0; }
 
 
 
 /*
 -----------------------
-Timeline Styling
+BLOG STYLING
 -----------------------
 */
-.timeline-content-wrapper{ margin: 0 auto; width: 100%; max-width: 900px; }
-.timeline-wrapper{ position: relative; float: left; width: 100%; margin: 25px auto 0 auto; text-align: center; }
-.quarter{ color:#FFFFFF; background-color:rgba(255,255,255,0.3); display: inline-block; padding: 0.35em 2em; text-align:center; }
-.red-select{ border-width:2px 0px; border-style: solid;  border-color:#A81818; }
-.timeline-content{ position:relative; margin: 100px auto 0px auto; }
-.about-organization{ max-width: 46%; padding-right: 1em; margin-top: 0; position: relative; float: right; }
-.extreme-description{ display:none; position:relative; width:400px;}
-.uwaterloo-description{ display:none; position:relative; width:400px;}
-.about{ color:#305FA3; font-size:16pt; }
-.i-did{ display: block; color:#A81818; font-size: 18pt; width: 100%; text-align: center; }
-.description{ position:relative; float: left; width: 100%; font-size:13pt; color:#CCCCC1; }
-.description ul { padding: 0;}
-.description ul li { position: relative; float: left; width: 40%; margin-left: 5%; margin-top: 0.5em; }
-
-
-
-
-/*Icon formatting*/
-.timeline-icon{ position:relative; float:left; max-width: 46%; padding-left: 1em; margin-top: 1em;}
-.background-hexes{ position:absolute; left:0px; }
-.project-icon{ color: #305FA3; float: left; }
-
+.post-wrapper{ width: 100%; }
+.post-title{ color: black; font-weight: 700; font-size: 1.875em; }
+.date{ font-size: 1em; }
 
 
 
 /* ANIMATION */
-.forward0{ -webkit-transform:translate(0px,210px); -moz-transform:translate(0px,210px); -o-transform:translate(0px,210px); -ms-transform:translate(0px,210px); }
-.forward1{ -webkit-transform:translate(180px,-104px); -moz-transform:translate(180px,-104px); -o-transform:translate(180px,-104px); -ms-transform:translate(180px,-104px); }
-.forward2{ -webkit-transform:translate(-180px,-104px); -moz-transform:translate(-180px,-104px); -o-transform:translate(-180px,-104px); -ms-transform:translate(-180px,-104px); }
+.forward0{ -webkit-transform: translate(0px,210px); -moz-transform: translate(0px,210px); -o-transform: translate(0px,210px); -ms-transform: translate(0px,210px); }
+.forward1{ -webkit-transform: translate(180px,-104px); -moz-transform: translate(180px,-104px); -o-transform: translate(180px,-104px); -ms-transform: translate(180px,-104px); }
+.forward2{ -webkit-transform: translate(-180px,-104px); -moz-transform: translate(-180px,-104px); -o-transform: translate(-180px,-104px); -ms-transform: translate(-180px,-104px); }
 
 
 
@@ -191,11 +79,11 @@ Timeline Styling
 RESPONSIVE STYLING
 -----------------------
 */
-@media (min-width: 1230px){
-	.center-hex-wrapper{ margin: 30px 70px; float:left; }
-	.left-hex-wrapper{ float:left; }
-	.right-hex-wrapper{ float:right; }
+@media (min-width:  1230px){
+	.center-hex-wrapper{ margin:  30px 70px; float: left; }
+	.left-hex-wrapper{ float: left; }
+	.right-hex-wrapper{ float: right; }
 }
-@media (max-width: 600px){
-	.banner-wrapper{ width:100%; background-image:none; border-bottom: 2px solid rgba(255,255,255,0.6); }
+@media (max-width:  600px){
+	.banner-wrapper{ width: 100%; background-image: none; border-bottom:  2px solid rgba(255,255,255,0.6); }
 }

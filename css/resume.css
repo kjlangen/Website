@@ -4,7 +4,7 @@ html{
 
 h1 {
   text-align: center;
-  color: #A81818;
+  color: #000000;
   border: 0px;
   margin: 0px;
   padding: 0px;
@@ -22,12 +22,14 @@ li{
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 
 #wrapper2{
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -0.7em;
 }
 
 .tight{
@@ -47,12 +49,15 @@ li{
   text-align: left;
   float: left;
   padding-left: 15px;
+  font-size: 0.9em;
 }
 
 #contact_info{
   text-align: right;
   float: right;
+  margin-bottom: 0.5em;
   padding-right: 15px;
+  font-size: 0.9em;
 }
 
 .subheading{
